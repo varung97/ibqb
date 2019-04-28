@@ -6,24 +6,24 @@
 <head>
     <meta charset='utf-8'>
     <title>IB Questionbank</title>
-    <link rel="stylesheet" media="all" href="../../../../../assets/application-746ec5d03ead8d9e8b3bb7d32173f2b4e2e22a05f0c5278e086ab55b3c9c238e.css" />
-    <link rel="stylesheet" media="print" href="../../../../../assets/print-6da094505524acaa25ea39a4dd5d6130a436fc43336c0bb89199951b860e98e9.css" />
-    <script src="../../../../../assets/application-3c91afd8a2942c18d21ed2700e1bdec14ada97f1d3788ae229315e1276d81453.js"></script>
+    <link rel="stylesheet" media="all" href="static/assets/application-746ec5d03ead8d9e8b3bb7d32173f2b4e2e22a05f0c5278e086ab55b3c9c238e.css" />
+    <link rel="stylesheet" media="print" href="static/assets/print-6da094505524acaa25ea39a4dd5d6130a436fc43336c0bb89199951b860e98e9.css" />
+    <script src="static/assets/application-3c91afd8a2942c18d21ed2700e1bdec14ada97f1d3788ae229315e1276d81453.js"></script>
     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML-full"
         async></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
-    <script type="text/javascript" src="blah.jsonp"></script>
-    <script type="text/javascript" src="blah.js"></script>
+    <script type="text/javascript" src="static/jsonp/blah.jsonp"></script>
+    <script type="text/javascript" src="static/js/blah.js"></script>
 
     <!--[if lt IE 9]>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'></script>
     <![endif]-->
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="lOO+LM8SvJSlZ4+vV/Fb64JisgoofLaLo875K18OsWrFFiH6gMyrrcwwPB3Ey50nksp+sQHedPp22W2vTlqN6Q==" />
-    <link href="../../../../../../resources/images/favicon.ico" rel="shortcut icon">
+    <link href="static/images/favicon.ico" rel="shortcut icon">
 
 </head>
 <body class='teacher syllabus_sections-index' ng-controller="myController">
@@ -112,7 +112,7 @@
                     <h1>DP Physics Questionbank</h1>
                 </div>
                 <div class='span8' style='margin: 0 0 -19px 0;'>
-                    <img style="width: 100%;" class="qb_logo" src="../../../../../assets/logos/ib-qb-46-logo-683ef0176708d789b2acbf6ece48c55de4cd5ddac781fb455afe3540d22d050e.jpg" alt="Ib qb 46 logo" />
+                    <img style="width: 100%;" class="qb_logo" src="static/assets/logos/ib-qb-46-logo-683ef0176708d789b2acbf6ece48c55de4cd5ddac781fb455afe3540d22d050e.jpg" alt="Ib qb 46 logo" />
                 </div>
             </div>
         </div>
@@ -122,19 +122,19 @@
         <select id="session-select" ng-model="selectedSession" ng-init="selectedSession='Any'" ng-options="session for session in sessions"></select>
 
         <p ng-repeat="x in questions | filter : applyFilters()">
-            <span ng-click="selectQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{x.id}}.html">{{ x.id }}</a>
+            <span ng-click="selectQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
         </p>
 
         <p ng-repeat="x in selectedQuestions">
-            <span ng-click="deselectQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{x.id}}.html">{{ x.id }}</a>
+            <span ng-click="deselectQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
         </p>
 
         <div ng-repeat="x in selectedQuestions">
-            {{x.id}}
+            {{ x.id }}
             <ng-include src="x.id + '.html'"></ng-include>
         </div>
 
-        <ng-include src="'./262363.html'"></ng-include>
+        <!-- <ng-include src="'static/angulartemplates/physics/262363.html'"></ng-include> -->
     </div>
 </body>
 </html>
