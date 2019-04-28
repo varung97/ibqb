@@ -16,16 +16,11 @@
     <link rel="stylesheet" href="static/css/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
-    <!-- <script type="text/javascript" src="static/jsonp/questions.jsonp"></script> -->
     <script type="text/javascript" src="static/js/app.js"></script>
 
-    <!--[if lt IE 9]>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'></script>
-    <![endif]-->
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="lOO+LM8SvJSlZ4+vV/Fb64JisgoofLaLo875K18OsWrFFiH6gMyrrcwwPB3Ey50nksp+sQHedPp22W2vTlqN6Q==" />
     <link href="static/images/favicon.ico" rel="shortcut icon">
-
 </head>
 <body class='teacher syllabus_sections-index' ng-controller="myController" ng-init="subject='Physics'">
     <div class='navbar navbar-fixed-top'>
@@ -140,20 +135,25 @@
             </tr>
         </table>
 
+        <div class="wrapper">
+            <button ng-click="generatePaper()" target="_blank">Generate Paper</button>
+            <button ng-click="generateMarkscheme()">Generate Markscheme</button>
+        </div>
+
         <table style="width:100%">
             <tr>
                 <th class="listcol">
                     <p ng-repeat="x in questions | filter : applyFilters()">
-                        <span ng-click="selectQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
+                        <span ng-click="addQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-click="selectQuestion(x)">{{ x.id }}</a>
                     </p>
                 </th>
                 <th class="listcol">
-                    <p ng-repeat="x in selectedQuestions">
-                        <span ng-click="deselectQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
+                    <p ng-repeat="x in addedQuestions">
+                        <span ng-click="removeQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-click="selectQuestion(x)">{{ x.id }}</a>
                     </p>
                 </th>
                 <th class="displaycol">
-                    <ng-include src="'static/angulartemplates/Physics/262363.html'"></ng-include>
+                    <ng-include src="'static/angulartemplates/' + subject + '/' + selectedQuestion + '.html'"></ng-include>
                 </th>
             </tr>
         </table>

@@ -1,14 +1,10 @@
 var app = angular.module('app', []);
 
-app.controller('myController', function myController($scope, $http) {
-    // $scope.allQuestions = {};
-    // $scope.years = [' Year'];
-    // $scope.sessions = [' Session'];
-    // $scope.papers = [' Paper'];
-    // $scope.levels = [' Level'];
-    // $scope.tzs = [' TZ'];
-    // $scope.outerSections = [' Topic'];
-    // $scope.innerSections = [' Subtopic'];
+app.controller('myController', function myController($rootScope, $scope, $http) {
+    $rootScope.$watch(function(){
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+      return true;
+    });
 
     $scope.updateSelectors = function() {
         if (!$scope.allQuestions.hasOwnProperty($scope.subject)) {
@@ -43,7 +39,7 @@ app.controller('myController', function myController($scope, $http) {
 
             $scope.$watch('subject', function (newSubject) {
                 $scope.updateSelectors();
-                $scope.selectedQuestions = [];
+                $scope.addedQuestions = [];
             });
         }, function error(data) {
             console.log("there was an error");
@@ -65,15 +61,51 @@ app.controller('myController', function myController($scope, $http) {
         }
     }
 
-    $scope.selectQuestion = function(question) {
-        if ($scope.selectedQuestions.every(function(selectedQuestion) { return question.id != selectedQuestion.id})) {
-            $scope.selectedQuestions.push(question);
+    $scope.addQuestion = function(question) {
+        if ($scope.addedQuestions.every(function(addedQuestion) { return question.id != addedQuestion.id})) {
+            $scope.addedQuestions.push(question);
         }
     }
 
-    $scope.deselectQuestion = function(question) {
-        $scope.selectedQuestions = $scope.selectedQuestions.filter(function(selectedQuestion, idx, arr) {
-            return selectedQuestion.id != question.id;
+    $scope.removeQuestion = function(question) {
+        $scope.addedQuestions = $scope.addedQuestions.filter(function(addedQuestion) {
+            return addedQuestion.id != question.id;
+        })
+    }
+
+    $scope.selectQuestion = function(question) {
+        $scope.selectedQuestion = question.id;
+    }
+
+    $scope.generatePaper = function() {
+        $http({
+            method: 'POST',
+            url: '/generatePaper',
+            headers: {'Content-Type': 'json'},
+            data: {
+                questions: $scope.addedQuestions.map(function(addedQuestion) {
+                    return addedQuestion.id;
+                }),
+                subject: $scope.subject
+            }
+        }).then(function(response) {
+            console.log(response.data);
+        })
+    }
+
+    $scope.generateMarkscheme = function() {
+        $http({
+            method: 'POST',
+            url: '/generateMarkscheme',
+            headers: {'Content-Type': 'json'},
+            data: {
+                questions: $scope.addedQuestions.map(function(addedQuestion) {
+                    return addedQuestion.id;
+                }),
+                subject: $scope.subject
+            }
+        }).then(function(response) {
+            console.log(response.data);
         })
     }
 })

@@ -21,6 +21,8 @@ if __name__ == '__main__':
 
             with open(os.path.join(QPATH, subject, question)) as f:
                 contents = f.read()
+                contents = contents.replace('../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset', 'static/tinymce_asset')
+
                 i = contents.find('<h2>Question</h2>')
                 contents = contents[i:]
 
@@ -36,7 +38,7 @@ if __name__ == '__main__':
                 f.write(answer)
 
             with open(os.path.join(OUTPATH, subject, qid + 'q.html'), 'w') as f:
-                f.write(question)
+                f.write(question[question.find('<div'):])
 
             with open(os.path.join(OUTPATH, subject, qid + 'a.html'), 'w') as f:
-                f.write(answer)
+                f.write(answer[answer.find('<div'):])
