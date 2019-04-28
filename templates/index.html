@@ -1,448 +1,140 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="theme-color" content="#ffffff">
-    <link rel="shortcut icon" href="../static/images/favicon.ico">
-    <title>IB QuestionBanks®</title>
-    <link rel="favicon" type="icon" href="../static/images/favicon.ico">
+<html ng-app="app">
 
-  <!-- Normalize -->
-        <link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
-        <!-- Animate.css -->
-        <link rel="stylesheet" type="text/css" href="../static/css/animate.css">
-        <!-- Font Awesome -->
-         <!-- just needs Font Awesome Solid -->
-   <link rel="stylesheet" type="text/css" href="../static/css/fontawesome.css">
-   <link rel="stylesheet" type="text/css" href="../static/css/solid.css">
 
-        <!-- Main style -->
-  <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset='utf-8'>
+    <title>IB Questionbank</title>
+    <link rel="stylesheet" media="all" href="static/assets/application-746ec5d03ead8d9e8b3bb7d32173f2b4e2e22a05f0c5278e086ab55b3c9c238e.css" />
+    <link rel="stylesheet" media="print" href="static/assets/print-6da094505524acaa25ea39a4dd5d6130a436fc43336c0bb89199951b860e98e9.css" />
+    <script src="static/assets/application-3c91afd8a2942c18d21ed2700e1bdec14ada97f1d3788ae229315e1276d81453.js"></script>
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML-full"
+        async></script>
 
-      <style>
-.donbutton {
-    background-image: url("../static/assets/logos/clipboard.png");
-    background-size: 30px 30px;
-    height: 30px;
-    width: 30px;
-    background-color: transparent;
-    border: none;
-    vertical-align: middle;
-    padding: 0px;
-    border: 0px;
-}
-.tooltip1 {
-    position: relative;
-    display: inline-block;
-    opacity: 1;
-    float:right;
-    margin-right: 0px;
-    margin-top: 0px;
-}
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
+    <!-- <script type="text/javascript" src="static/jsonp/questions.jsonp"></script> -->
+    <script type="text/javascript" src="static/js/app.js"></script>
 
-.tooltip1 .tooltiptext1 {
-    visibility: hidden;
-    width: 310px;
-    background-color: white;
-    color: transparent;
-    text-align: center;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    top: -130px;
-    right: 110%;
-    border-radius: 20px;
-}
+    <!--[if lt IE 9]>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'></script>
+    <![endif]-->
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="lOO+LM8SvJSlZ4+vV/Fb64JisgoofLaLo875K18OsWrFFiH6gMyrrcwwPB3Ey50nksp+sQHedPp22W2vTlqN6Q==" />
+    <link href="static/images/favicon.ico" rel="shortcut icon">
 
-.tooltip1 .tooltiptext1::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 100%;
-    margin-top: -20px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent transparent black;
-}
-.tooltip1:hover .tooltiptext1 {
-    visibility: visible;
-}
-.tooltip2 {
-    position: relative;
-    display: inline-block;
-}
-
-.tooltip2 .tooltiptext2 {
-    visibility: hidden;
-    width: 150px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -75px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.tooltip2 .tooltiptext2::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-}
-
-.tooltip2:hover .tooltiptext2 {
-    visibility: visible;
-    opacity: 1;
-}
-.qr {
-    color: #31708f;
-    font-weight: bold;
-}
-.input {
-    border-color: transparent;
-    background-color: transparent;
-    width: 320px;
-    font-family: segoe ui, sans-serif;
-    font-weight: bold;
-    align-items: center;
-    margin-top: 20px;
-    padding: 0px;
-    border: 0px;
-}
-img {
-    max-width: 100%;
-}
-      </style>
-
-  </head>
-
-  <body>
-        <div class="preloader">
-          <img src="../static/images/loader.gif" alt="Preloader image">
-      </div>
-        <nav class="navbar">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html"><img src="../static/images/dp-programme-logo-en.png" data-active-url="../static/images/dp-programme-logo-en.png" alt=""></a>
+</head>
+<body class='teacher syllabus_sections-index' ng-controller="myController" ng-init="subject='Physics'">
+    <div class='navbar navbar-fixed-top'>
+        <div class='navbar-inner'>
+            <div class='container'>
+                <div class='brand'>
+                    <div class='inner'><a href="http://ibo.org/">ibo.org</a></div>
+                </div>
+                <ul class='nav'>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li class='active dropdown'>
+                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                            Questionbanks
+                            <b class='caret'></b>
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li>
+                                <a ng-click="subject='Physics'" target="_blank">DP Physics</a>
+                            </li>
+                            <li>
+                                <a ng-click="subject='Geography'" target="_blank">DP Geography</a>
+                            </li>
+                            <li>
+                                <a ng-click="subject='Chemistry'" target="_blank">DP Chemistry</a>
+                            </li>
+                            <li>
+                                <a ng-click="subject='Biology'" target="_blank">DP Biology</a>
+                            </li>
+                            <li>
+                                <a ng-click="subject='FurtherMathHL'" target="_blank">DP Further Mathematics HL</a>
+                            </li>
+                            <li>
+                                <a ng-click="subject='MathHL'" target="_blank">DP Mathematics HL</a>
+                            </li>
+                            <li>
+                                <a ng-click="subject='MathSL'" target="_blank">DP Mathematics SL</a>
+                            </li>
+                            <li>
+                                <a ng-click="subject='MathStudies'" target="_blank">DP Mathematical Studies</a>
+                            </li>
+                        </ul>
+                    </li>
+                <!-- - if current_user.is_language_services? && !current_user.is_publishing? -->
+                <!-- %li= link_to "Language services", tolk_path -->
+                </ul>
+                <ul class='nav pull-right'>
+                    <li class='dropdown'>
+                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+                            Help
+                            <b class='caret'></b>
+                        </a>
+                        <ul class='dropdown-menu'>
+                            <li><a href="https://questionbank.ibo.org/video_tour?locale=en">Video tour</a></li>
+                            <li><a href="https://questionbank.ibo.org/instructions?locale=en">Detailed instructions</a></li>
+                            <li><a target="_blank" href="https://ibanswers.ibo.org/">IB Answers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.ibdocuments.com/Home">IB Documents Team</a>
+                    </li>
+                </ul>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right main-nav">
-                <li><a href="index.html" class="btn btn-blue">Home</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#terms" >Terms</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#help" >Help</a></li>
-              </ul>
+        </div>
+    </div>
+
+    <div class='page-content container'>
+        <div class='row'>
+            <div class='span24'>
+
+                <div class="pull-right screen_only"><a class="btn btn-small btn-info" href="https://questionbank.ibo.org/updates?locale=en">Updates to Questionbank</a></div>
+                <p class='muted language_chooser'>
+                    User interface language:
+                    <a href="https://questionbank.ibo.org/en/users/set_user_locale?new_locale=en">English</a>
+                    |
+                    <a href="https://questionbank.ibo.org/en/users/set_user_locale?new_locale=es">Español</a>
+                </p>
             </div>
-            <!-- /.navbar-collapse -->
-          </div>
-          <!-- /.container-fluid -->
-        </nav>
-        <header id="intro">
-            <div class="container">
-              <div class="table">
-                <div class="header-text">
-                  <div class="row">
-                    <div class="col-md-12 text-center">
-                      <h3 class="light white">IB Documents Team</h3>
-                      <span class="typed-cursor">
-                        <img src="../static/assets/logos/ib-logo-b5a66ef13ddd46191f37124b9dda50573b002c8ec607e12ef105595597cddc82.png">
-                      </span>
-                      <h1 class="white typed"> IB Version 4 QuestionBanks</h1>
-                      <span class="typed-cursor">
-                        <img src="../static/images/favicon.ico" style="height: 30px;width: 30px;padding-bottom: 5px;padding-right: 5px;">
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </header>
-        <section id="services" class="section section-padded">
-            <div class="cut cut-top"></div>
-           <div class="container">
-            <div class="text-center row title">
-                <img src="../static/assets/logos/ib-qb-general-logo-e67f1649d8854d2d537b60c9c3786729e94c93c9ff8a9566e301beac2123ba75.jpg" alt="IBQBLogo" style="width:1000px;height:235px;">
-            </div>
-              <br/>
-              <div class="col-md-1">&nbsp;</div>
-              <div class="col-md-10">
-              <p class="muted compact">For more IB Resources, please visit our main resources page <a href="https://ibresources.github.io/" target="_blank">https://ibresources.github.io/</a> or our sub <a href="https://www.reddit.com/r/IBO/" target="_blank">r/IBO</a>.</p>
-
-              <p class="muted compact">This product includes 8 IB Diploma Programme QuestionBanks, brought to you by the IB Documents Team.</p>
-
-              <p class="muted compact">View the QuestionBanks clicking on the images below for each one.</p>
-              </div>
-              <div class="col-md-1">&nbsp;</div>
-
-
-            </div>
-            <div class="container">
-            <div class="row services">
-                <a href="templates/questionbank.ibo.org/en/teachers/00000/questionbanks/43-dp-biology/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Biology</h4>
-                      <p class="description">
-                        <br>
-                        <img src="../static/assets/logos/ib-qb-43-logo-cdfae0cc01fed52ce940ddc496811bda61a76e8309cc51fa8c7ab73ed9dc8acb.jpg" alt="IBQBLogo" style="width:275px;height:58px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="questionbank.ibo.org/en/teachers/00000/questionbanks/45-dp-chemistry/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Chemistry</h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-45-logo-76d69de0db944ddd9e10134eb5bfca316735f279c439a3b51cea24f5bdab47d2.jpg" alt="IBQBLogo" style="width:275px;height:57px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="%% url_for('physics') %%" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Physics</h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-46-logo-683ef0176708d789b2acbf6ece48c55de4cd5ddac781fb455afe3540d22d050e.jpg" alt="IBQBLogo" style="width:275px;height:59px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="./questionbank.ibo.org/en/teachers/00000/questionbanks/42-dp-further-mathematics-hl/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Further Mathematics HL</h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-42-logo-6d8ae37c8075b97a18c503085aeda5bb92d53112eaa90eec357adf278355d2da.jpg" alt="IBQBLogo" style="width:275px;height:65px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="./questionbank.ibo.org/en/teachers/00000/questionbanks/7-dp-mathematics-hl/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Mathematics HL</h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-7-logo-b8a2b271c6f02dc542d5d051743e3adf73e7f18017f7c469ca8c0fb0a80374b7.jpg" alt="IBQBLogo" style="width:275px;height:65px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="./questionbank.ibo.org/en/teachers/00000/questionbanks/40-dp-mathematics-sl/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Mathematics SL</h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-40-logo-ef6b5aa00c9b303c227c7402326b436b7ab142771db0a9f897e33bc1319af104.jpg" alt="IBQBLogo" style="width:275px;height:65px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="./questionbank.ibo.org/en/teachers/00000/questionbanks/41-dp-mathematical-studies/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Mathematical Studies</h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-41-logo-d7bbaca33d13082d12befd19c810d8f5e0701f0a897afed7094f2d54b4a9691c.jpg" alt="IBQBLogo" style="width:275px;height:65px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="./questionbank.ibo.org/en/teachers/00000/questionbanks/1-dp-geography/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Geography</h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-1-logo-27660f96ceb50b93d56b9ad8041f918f76b4a8c2291e545cafed6e8298a557b1.jpg" alt="IBQBLogo" style="width:275px;height:64px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="./questionbank.ibo.org/en/teachers/00000/questionbanks/2-dp-history/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">History <br><br> <strong>NOT YET AVAILABLE</strong></h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-2-logo-29ebec3693dea4ce731cb04679dac9b4fa62f22a7bbb229971119893cad77c01.jpg" alt="IBQBLogo" style="width:275px;height:58px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="./questionbank.ibo.org/en/teachers/00000/questionbanks/47-dp-business-management/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Business Management <br><br> <strong>NOT YET AVAILABLE</strong></h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-47-logo-00b17586f0a2795c13f244fa93da91a259839ead259ce2454d3a23471810d76c.jpg" alt="IBQBLogo" style="width:275px;height:65px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="./questionbank.ibo.org/en/teachers/00000/questionbanks/48-dp-economics/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Economics <br><br> <strong>NOT YET AVAILABLE</strong></h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-48-logo-7a9b850a04862b2e0857efded7cb6879b203df7e42cbfaa80fbc636567010a5d.jpg" alt="IBQBLogo" style="width:275px;height:64px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-                <a href="./questionbank.ibo.org/en/teachers/00000/questionbanks/6-dp-psychology/syllabus_sections.html" target="_blank">
-                <div class="col-md-4">
-                    <div class="service">
-                      <h4 class="heading"><img src="../static/images/favicon.ico" style="height: 35px;width: 40px;padding-bottom: 5px;padding-right: 10px;">Psychology <br><br> <strong>NOT YET AVAILABLE</strong></h4>
-                      <p class="description">
-                        <br>
-                            <img src="../static/assets/logos/ib-qb-6-logo-e90ea021bb5bb5e29ef7d0aa0a4afe9c1b101de89cb17fa65ae317c80b9d1120.jpg" alt="IBQBLogo" style="width:275px;height:65px;">
-                      </p>
-                    </div>
-                </div>
-                </a>
-
-                <div class="col-sm-12">
-                <br/>
-                <!--Donation Button section-->
-    <hr><div class="tooltip1"><img src="../static/assets/logos/btc.png">
-            <span class="tooltiptext1"><img src="../static/assets/logos/qr.png"> <p class="qr">Help us keep the server online!</p></span>
         </div>
 
-    <strong>BTC: </strong><input class="input" type="text" value="14QZ2GxhGNmXaGbTXKxdfBhWYKPmCYN1Co" id="myInput2">
-
-    <div class="tooltip2">
-        <button class="donbutton" onclick="myFunction1()" onmouseout="outFunc1()">
-            <span class="tooltiptext2" id="myTooltip2">Copy to clipboard</span>
-        </button>
-    </div><hr>
-              </div>
+        <div class='page-header'>
+            <div class='row'>
+                <div class='span16'>
+                    <h1>DP {{ subject }} Questionbank</h1>
+                </div>
+                <!-- <div class='span8' style='margin: 0 0 -19px 0;'>
+                    <img style="width: 100%;" class="qb_logo" src="static/assets/logos/ib-qb-46-logo-683ef0176708d789b2acbf6ece48c55de4cd5ddac781fb455afe3540d22d050e.jpg" alt="Ib qb 46 logo" />
+                </div> -->
             </div>
-          </div>
-                  </section>
-                  <div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content modal-popup">
-                          <a href="#" class="close-link"><i class="fas fa-times-circle"></i></a>
-                          <h3>Terms and conditions</h3>
-                            <p>Material in this product may be used in accordance with the following terms and
-                              conditions.</p>
-                            <p>The user is entitled to print and make copies of selected files or extracts for
-                              teaching, assessment or study purposes provided that all copies acknowledge the
-                              International Baccalaureate Organization as the source. This "network licensed" product
-                              may be used by a single user or by multiple users via an internal network. Users may not
-                              make any material in this product available on a publicly
-                              accessible site or distribute it beyond the school community.</p>
-                            <p>The license tied with this product prohibits commercial use of any selected files or extracts from this product.
-                              Use by third parties who have no formal relationship with the International Baccalaureate Organization including but not limited to publishers,
-                              tutoring services, professional development providers, vendors operating curriculum mapping services or
-                              teacher resource digital platforms, is prohibited and subject to IBO’s prior written consent.
-                              License requests should be sent to <a class="white" href="mailto:copyright@ibo.org">copyright@ibo.org</a>. More information on how to request a license can be obtained from <a class="white" href="https://www.ibo.org/contact-the-ib/media-inquiries/for-publishers/guidance-for-third-party-publishers-and-providers/how-to-apply-for-a-license">https://www.ibo.org/contact-the-ib/media-inquiries/for-publishers/guidance-for-third-party-publishers-and-providers/how-to-apply-for-a-license
-                              </a>.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content modal-popup">
-                          <a href="#" class="close-link"><i class="fas fa-times-circle"></i></a>
-                          <h3 class="white">Help</h3>
-                            <h4>Installation</h4>
-                            <p>This product includes HTML (hypertext markup language) files for the navigation pages.</p>
-                            <p>If you have an up-to-date version of a browser to read HTML pages (for example,
-                              Internet Explorer®, Firefox®, Safari® or Google Chrome®), you are ready to access the contents of the product. </p>
-                            <p>Once you have the required software installed, you can now open the file "<a href="index.html">index.html</a>" in your browser to start navigating the product.</p>
-                            <p>
-                              <strong>Usage tip:</strong> When you access a QuestionBank, it will open in
-                              a new browser window
-                            </p>
-                            <h4>Installation to a web server</h4>
-                            <p>The product can be made available on an intranet web server by moving the contents into the
-                              server file space, and providing users with a link to the "index.html" file. The product
-                              is self-contained.</p>
-                        </div>
-                      </div>
-                      </div>
-                      <footer>
-                            <br>
-                            <div class="container">
-                            <div class="row bottom-footer text-center">
-                              <div class="col-sm-12">
-                                <a class="copyright" href="https://www.ibo.org/">&copy; International Baccalaureate Organization 2018</a>
-                                <img src="../static/images/IB-logo-tri.png" alt="IB logo">
-                              </div>
+        </div>
 
-                            </div>
-                          </div>
-                        </footer>
-                        <!-- Holder for mobile navigation -->
-                        <div class="mobile-nav">
-                          <ul>
-                          </ul>
-                          <a href="#" class="close-link"><i class="fas fa-arrow-up"></i></a>
-                        </div>
-                        <!-- Scripts -->
-                        <script src="../static/js/jquery-1.11.1.min.js"></script>
-                        <script src="../static/js/bootstrap.min.js"></script>
-                        <script src="../static/js/typewriter.js"></script>
-                        <script src="../static/js/main.js"></script>
-    </body>
+        <select id="year-select" ng-model="selectedYear" ng-init="selectedYear='Any'" ng-options="year for year in years"></select>
 
-        <script>
-        function myFunction1() {
-            var copyText = document.getElementById("myInput2");
-            copyText.select();
-            document.execCommand("Copy");
+        <select id="session-select" ng-model="selectedSession" ng-init="selectedSession='Any'" ng-options="session for session in sessions"></select>
 
-            var tooltip = document.getElementById("myTooltip2");
-            tooltip.innerHTML = "Copied BTC address";
-        }
+        <p ng-repeat="x in questions | filter : applyFilters()">
+            <span ng-click="selectQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
+        </p>
 
-        function outFunc() {
-            var tooltip = document.getElementById("myTooltip2");
-            tooltip.innerHTML = "Copy to clipboard";
-        }
-    </script>
+        <p ng-repeat="x in selectedQuestions">
+            <span ng-click="deselectQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
+        </p>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myDIV");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                }
-                else {x.style.display = "none";}
-        }
-    </script>
+        <div ng-repeat="x in selectedQuestions">
+            {{ x.id }}
+            <ng-include src="x.id + '.html'"></ng-include>
+        </div>
+
+        <!-- <ng-include src="'static/angulartemplates/physics/262363.html'"></ng-include> -->
+    </div>
+</body>
 </html>

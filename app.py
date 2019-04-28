@@ -20,10 +20,6 @@ app.jinja_options = jinja_options
 def index():
     return render_template("index.html")
 
-@app.route('/physics')
-def physics():
-    return render_template("physics.html")
-
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))

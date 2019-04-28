@@ -1,0 +1,10 @@
+{
+    "Physics": [
+        {"id": 262364, "year": 2012, "session": "M"},
+        {"id": 262363, "year": 2013, "session": "D"}
+    ],
+    "Chemistry": [
+        {"id": 262361, "year": 2018, "session": "M"},
+        {"id": 262368, "year": 2014, "session": "D"}
+    ]
+}
