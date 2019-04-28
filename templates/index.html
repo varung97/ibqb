@@ -13,6 +13,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML-full"
         async></script>
 
+    <link rel="stylesheet" href="static/css/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
     <!-- <script type="text/javascript" src="static/jsonp/questions.jsonp"></script> -->
@@ -110,30 +111,52 @@
                 <div class='span16'>
                     <h1>DP {{ subject }} Questionbank</h1>
                 </div>
-                <!-- <div class='span8' style='margin: 0 0 -19px 0;'>
-                    <img style="width: 100%;" class="qb_logo" src="static/assets/logos/ib-qb-46-logo-683ef0176708d789b2acbf6ece48c55de4cd5ddac781fb455afe3540d22d050e.jpg" alt="Ib qb 46 logo" />
-                </div> -->
             </div>
         </div>
 
-        <select id="year-select" ng-model="selectedYear" ng-init="selectedYear='Any'" ng-options="year for year in years"></select>
+        <table style="width:100%">
+            <tr>
+                <th>
+                    <select id="year-select" ng-model="selectedYear" ng-init="selectedYear=' Year'" ng-options="year for year in years"></select>
+                </th>
+                <th>
+                    <select id="session-select" ng-model="selectedSession" ng-init="selectedSession=' Session'" ng-options="session for session in sessions"></select>
+                </th>
+                <th>
+                    <select id="paper-select" ng-model="selectedPaper" ng-init="selectedPaper=' Paper'" ng-options="paper for paper in papers"></select>
+                </th>
+                <th>
+                    <select id="level-select" ng-model="selectedLevel" ng-init="selectedLevel=' Level'" ng-options="level for level in levels"></select>
+                </th>
+                <th>
+                    <select id="tzs-select" ng-model="selectedTZ" ng-init="selectedTZ=' TZ'" ng-options="tz for tz in tzs"></select>
+                </th>
+                <th>
+                    <select id="outer-section-select" ng-model="selectedOuterSection" ng-init="selectedOuterSection=' Topic'" ng-options="outerSection for outerSection in outerSections"></select>
+                </th>
+                <th>
+                    <select id="inner-section-select" ng-model="selectedInnerSection" ng-init="selectedInnerSection=' Subtopic'" ng-options="innerSection for innerSection in innerSections"></select>
+                </th>
+            </tr>
+        </table>
 
-        <select id="session-select" ng-model="selectedSession" ng-init="selectedSession='Any'" ng-options="session for session in sessions"></select>
-
-        <p ng-repeat="x in questions | filter : applyFilters()">
-            <span ng-click="selectQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
-        </p>
-
-        <p ng-repeat="x in selectedQuestions">
-            <span ng-click="deselectQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
-        </p>
-
-        <div ng-repeat="x in selectedQuestions">
-            {{ x.id }}
-            <ng-include src="x.id + '.html'"></ng-include>
-        </div>
-
-        <!-- <ng-include src="'static/angulartemplates/physics/262363.html'"></ng-include> -->
+        <table style="width:100%">
+            <tr>
+                <th class="listcol">
+                    <p ng-repeat="x in questions | filter : applyFilters()">
+                        <span ng-click="selectQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
+                    </p>
+                </th>
+                <th class="listcol">
+                    <p ng-repeat="x in selectedQuestions">
+                        <span ng-click="deselectQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-href="questions/{{ x.id }}.html">{{ x.id }}</a>
+                    </p>
+                </th>
+                <th class="displaycol">
+                    <ng-include src="'static/angulartemplates/Physics/262363.html'"></ng-include>
+                </th>
+            </tr>
+        </table>
     </div>
 </body>
 </html>

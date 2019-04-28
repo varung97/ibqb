@@ -1,0 +1,91 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1"><span class="s1">The curves \(y = f(x)\) and \(y = g(x)\) </span>both pass through the point \((1,{\text{ }}0)\) and are defined by the differential equations \(\frac{{{\text{d}}y}}{{{\text{d}}x}} = x - {y^2}\) and \(\frac{{{\text{d}}y}}{{{\text{d}}x}} = y - {x^2}\) <span class="s1">respectively.</span></p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Show that the tangent to the curve \(y = f(x)\) <span class="s1">at the point \((1,{\text{ }}0)\) </span>is normal to the curve \(y = g(x)\) <span class="s1">at the point \((1,{\text{ }}0)\)</span>.</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Find \(g(x)\).</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Use Euler&rsquo;s method with steps of&nbsp;\(0.2\) <span class="s1">to estimate \(f(2)\) </span>to&nbsp;\(5\) <span class="s1">decimal places.</span></p>
+<div class='marks'>[5]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Explain why \(y = f(x)\) cannot cross the isocline \(x - {y^2} = 0\), for \(x &gt; 1\).</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>d.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>(i) &nbsp; &nbsp; Sketch the isoclines \(x - {y^2} =&nbsp; - 2,{\text{ }}0,{\text{ }}1\).</p>
+<p>(ii) &nbsp; &nbsp; On the same set of axes, sketch the graph of \(f\).</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>e.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p>gradient of \(f\) at \((1,{\text{ }}0)\) is \(1 - {0^2} = 1\) and the gradient of \(g\) at \((1,{\text{ }}0)\) is \(0 - {1^2} =&nbsp; - 1\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>so gradient of normal is&nbsp;\(1\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>= Gradient of the tangent of \(f\) at \((1,{\text{ }}0)\) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>\(\frac{{{\text{d}}y}}{{{\text{d}}x}} - y =&nbsp; - {x^2}\)</p>
+<p>integrating factor is \({{\text{e}}^{\int { - 1{\text{d}}x} }} = {{\text{e}}^{ - x}}\) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>\(y{{\text{e}}^{ - x}} = \int { - {x^2}{{\text{e}}^{ - x}}{\text{d}}x} \) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>\( = {x^2}{{\text{e}}^{ - x}} - \int {2x{{\text{e}}^{ - x}}{\text{d}}x} \) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>\( = {x^2}{{\text{e}}^{ - x}} + 2x{{\text{e}}^{ - x}} - \int {2{{\text{e}}^{ - x}}{\text{d}}x} \)</p>
+<p>\( = {x^2}{{\text{e}}^{ - x}} + 2x{{\text{e}}^{ - x}} + 2{{\text{e}}^{ - x}} + c\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>&nbsp;</p>
+<p><strong>Note: &nbsp; &nbsp; </strong>Condone missing \( + c\) at this stage.</p>
+<p>&nbsp;</p>
+<p>\( \Rightarrow g(x) = {x^2} + 2x + 2 + c{{\text{e}}^x}\)</p>
+<p>\(g(1) = 0 \Rightarrow c =&nbsp; - \frac{5}{{\text{e}}}\) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>\( \Rightarrow g(x) = {x^2} + 2x + 2 - 5{{\text{e}}^{x - 1}}\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p><strong><em>[6 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">use of \({y_{n + 1}} = {y_n} + hf'({x_n},{\text{ }}{y_n})\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1">\({x_0} = 1,{\text{ }}{y_0} = 0\)</p>
+<p class="p1">\({x_1} = 1.2,{\text{ }}{y_1} = 0.2\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\({x_2} = 1.4,{\text{ }}{y_2} = 0.432\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)(A1)</em></strong></p>
+<p class="p1">\({x_3} = 1.6,{\text{ }}{y_3} = 0.67467 \ldots \)</p>
+<p class="p1">\({x_4} = 1.8,{\text{ }}{y_4} = 0.90363 \ldots \)</p>
+<p class="p1">\({x_5} = 2,{\text{ }}{y_5} = 1.1003255 \ldots \)</p>
+<p class="p1">answer \( = 1.10033\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1 <span class="Apple-converted-space">&nbsp; &nbsp; </span>N3</em></strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Award <strong><em>A0 </em></strong>or <strong><em>N1 </em></strong><span class="s1">if&nbsp;\(1.10\) </span>given as answer.</p>
+<p class="p1"><em><strong>[5 marks]</strong></em></p>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">at the point \((1,{\text{ }}0)\), the gradient of \(f\) is positive so the graph of&nbsp;<span class="s1">\(f\) </span>passes into the first quadrant for \(x &gt; 1\)</p>
+<p class="p1">in the first quadrant below the curve \(x - {y^2} = 0\) the gradient of \(f\) is positive <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1">the curve \(x - {y^2} = 0\) has positive gradient in the first quadrant <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1">if \(f\) were to reach \(x - {y^2} = 0\) it would have gradient of zero, and therefore would not cross <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1"><strong><em>[3 marks]</em></strong></p>
+<div class='question_part_label'>d.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) and (ii)</p>
+<p class="p1"><strong><em><img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/1336/Schermafbeelding_2016-01-21_om_12.34.00.png" alt="" />&nbsp; &nbsp; &nbsp;A4</em></strong></p>
+<p class="p2">&nbsp;</p>
+<p><strong>Note: &nbsp; &nbsp; </strong>Award <strong><em>A1 </em></strong>for 3 correct isoclines.</p>
+<p>Award <strong><em>A1 </em></strong>for \(f\) not reaching \(x - {y^2} = 0\).</p>
+<p>Award <strong><em>A1 </em></strong>for turning point of \(f\) on \(x - {y^2} = 0\).</p>
+<p>Award <strong><em>A1 </em></strong>for negative gradient to the left of the turning point.</p>
+<p>&nbsp;</p>
+<p><strong>Note: &nbsp; &nbsp; </strong>Award <strong><em>A1 </em></strong>for correct shape and position if curve drawn without any isoclines.</p>
+<p><em><strong>[4 marks]</strong></em></p>
+<p><em><strong>Total [20 marks]</strong></em></p>
+<div class='question_part_label'>e.</div>
+</div>

@@ -1,0 +1,46 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1">\(S\) is defined as the set of all \(2 \times 2\) <span class="s1">non-singular matrices. </span>\(A\) <span class="s1">and </span>\(B\) <span class="s1">are two elements of the set </span>\(S\)<span class="s1">.</span></p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Show that \({({A^T})^{ - 1}} = {({A^{ - 1}})^T}\).</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Show that \({(AB)^T} = {B^T}{A^T}\).</p>
+<div class='marks'>[8]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">A relation \(R\) is defined on \(S\) such that \(A\) is related to \(B\) if and only if there exists an element \(X\) of \(S\) such that \(XA{X^T} = B\). Show that \(R\) is an equivalence relation.</p>
+<div class='marks'>[8]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\(A = \left( {\begin{array}{*{20}{c}} a&amp;b \\ c&amp;d \end{array}} \right)\)</p>
+<p class="p1">\({A^T} = \left( {\begin{array}{*{20}{c}} a&amp;c \\ b&amp;d \end{array}} \right)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\({({A^T})^{ - 1}} = \frac{1}{{ad - bc}}\left( {\begin{array}{*{20}{c}} d&amp;{ - c} \\ { - b}&amp;a \end{array}} \right)\;\;\;\)(which exists because \(ad - bc \ne 0\)) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\({A^{ - 1}} = \frac{1}{{ad - bc}}\left( {\begin{array}{*{20}{c}} d&amp;{ - b} \\ { - c}&amp;a \end{array}} \right)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\({({A^{ - 1}})^T} = \frac{1}{{ad - bc}}\left( {\begin{array}{*{20}{c}} d&amp;{ - c} \\ { - b}&amp;a \end{array}} \right)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">hence \({({A^T})^{ - 1}} = {({A^{ - 1}})^T}\) as required <strong><em>AG</em></strong></p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\(A = \left( {\begin{array}{*{20}{c}} a&amp;b \\ c&amp;d \end{array}} \right)\;\;\;B = \left( {\begin{array}{*{20}{c}} e&amp;f \\ g&amp;h \end{array}} \right)\)</p>
+<p class="p1">\(AB = \left( {\begin{array}{*{20}{c}} {ae + bg}&amp;{af + bh} \\ {ce + dg}&amp;{cf + dh} \end{array}} \right)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\({(AB)^T} = \left( {\begin{array}{*{20}{c}} {ae + bg}&amp;{ce + dg} \\ {af + bh}&amp;{cf + dh} \end{array}} \right)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\({B^T} = \left( {\begin{array}{*{20}{c}} e&amp;g \\ f&amp;h \end{array}} \right)\;\;\;{A^T} = \left( {\begin{array}{*{20}{c}} a&amp;c \\ b&amp;d \end{array}} \right)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\({B^T}{A^T} = \left( {\begin{array}{*{20}{c}} e&amp;g \\ f&amp;h \end{array}} \right)\left( {\begin{array}{*{20}{c}} a&amp;c \\ b&amp;d \end{array}} \right) = \left( {\begin{array}{*{20}{c}} {ae + bg}&amp;{ce + dg} \\ {af + bh}&amp;{cf + dh} \end{array}} \right)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">hence \({(AB)^T} = {B^T}{A^T}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">\(R\) is reflexive since \(I \in S\) and \(IA{I^T} = A\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\(XA{X^T} = B \Rightarrow A = {X^{ - 1}}B{({X^T})^{ - 1}}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1A1</em></strong></p>
+<p class="p1">\( \Rightarrow A = {X^{ - 1}}B{({X^{ - 1}})^T}\) from a (i) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">which is of the correct form, hence symmetric <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<p class="p1">\(ARB \Rightarrow XA{X^T} = B\) and \(BRC = YB{Y^T} = C\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1"><strong>Note:<span class="Apple-converted-space">&nbsp;</span></strong>Allow use of \(X\) rather than \(Y\) in this line.</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">\( \Rightarrow YXA{X^T}{Y^T} = YB{Y^T} = C\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1A1</em></strong></p>
+<p class="p1">\( \Rightarrow (YX)A{(YX)^T} = C\) from a (ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">this is of the correct form, hence transitive</p>
+<p class="p1">hence \(R\) is an equivalence relation <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>

@@ -1,0 +1,104 @@
+<h2>Question</h2>
+<div class='specification'>
+<p>If \(X\) is a random variable that follows a Poisson distribution with mean \(\lambda&nbsp; &gt; 0\) then the probability generating function of \(X\) is \(G(t) = {e^{\lambda (t - 1)}}\).</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Prove that \({\text{E}}(X) = \lambda \).</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Prove that \({\text{Var}}(X) = \lambda \).</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">\(Y\) is a random variable, independent of \(X\), that also follows a Poisson distribution with mean \(\lambda \).</p>
+<p class="p1">If \(S = 2X - Y\) find</p>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\({\text{E}}(S)\);</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\({\text{Var}}(S)\).</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Let \(T = \frac{Y}{2} + \frac{Y}{2}\).</p>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Show that \(T\) is an unbiased estimator for \(\lambda \).</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Show that \(T\) is a more efficient unbiased estimator of \(\lambda \) than \(S\).</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Could either \(S\) or \(T\) model a Poisson distribution? Justify your answer.</p>
+<div class='marks'>[1]</div>
+<div class='question_part_label'>d.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">By consideration of the probability generating function, \({G_{X + Y}}(t)\), of \(X + Y\), prove that \(X + Y\) follows a Poisson distribution with mean \(2\lambda \).</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>e.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Find</p>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\({G_{X + Y}}(1)\);</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\({G_{X + Y}}( - 1)\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>f.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Hence find the probability that \(X + Y\) is an even number.</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>g.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p>(i) &nbsp; &nbsp; \(G'(t) = \lambda {e^{\lambda (t - 1)}}\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>\({\text{E}}(X) = G'(1)\) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>\( = \lambda \) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p>(ii) &nbsp; &nbsp; \(G''(t) = {\lambda ^2}{e^{\lambda (t - 1)}}\) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>\( \Rightarrow G''(1) = {\lambda ^2}\) &nbsp; &nbsp; <strong><em>(A1)</em></strong></p>
+<p>\({\text{Var}}(X) = G''(1) + G'(1) - {\left( {G'(1)} \right)^2}\) &nbsp; &nbsp; <strong><em>(M1)</em></strong></p>
+<p>\( = {\lambda ^2} + \lambda&nbsp; - {\lambda ^2}\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>\( = \lambda \) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p><strong><em>[6 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>(i) &nbsp; &nbsp; \({\text{E}}(S) = 2\lambda&nbsp; - \lambda&nbsp; = \lambda \) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>(ii) &nbsp; &nbsp; \({\text{Var}}(S) = 4\lambda&nbsp; + \lambda&nbsp; = 5\lambda \) &nbsp; &nbsp; <strong><em>(A1)A1</em></strong></p>
+<p>&nbsp;</p>
+<p><strong>Note: &nbsp; &nbsp; </strong>First <strong><em>A1 </em></strong>can be awarded for either \(4\lambda \) or \(\lambda \).</p>
+<p><em><strong>[3 marks]</strong></em></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>(i) &nbsp; &nbsp; \({\text{E}}(T) = \frac{\lambda }{2} + \frac{\lambda }{2} = \lambda \;\;\;\)(so&nbsp;<em>\(T\) </em>is an unbiased estimator) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>(ii) &nbsp; &nbsp; \({\text{Var}}(T) = \frac{1}{4}\lambda&nbsp; + \frac{1}{4}\lambda&nbsp; = \frac{1}{2}\lambda \) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>this is less than \({\text{Var}}(S)\)<em>, </em>therefore \(T\) is the more efficient estimator &nbsp; &nbsp; <strong><em>R1AG</em></strong></p>
+<p>&nbsp;</p>
+<p><strong>Note: &nbsp; &nbsp; </strong>Follow through their variances from (b)(ii) and (c)(ii).</p>
+<p><em><strong>[3 marks]</strong></em></p>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">no, mean does not equal the variance <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1"><strong><em>[1 mark]</em></strong></p>
+<div class='question_part_label'>d.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">\({G_{X + Y}}(t) = {e^{\lambda (t - 1)}} \times {e^{\lambda (t - 1)}} = {e^{2\lambda (t - 1)}}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1A1</em></strong></p>
+<p class="p1">which is the probability generating function for a Poisson with a mean of \(2\lambda \) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1AG</em></strong></p>
+<p class="p1"><strong><em>[3 marks]</em></strong></p>
+<div class='question_part_label'>e.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\({G_{X + Y}}(1) = 1\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\({G_{X + Y}}( - 1) = {e^{ - 4\lambda }}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1"><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>f.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">\({G_{X + Y}}(1) = p(0) + p(1) + p(2) + p(3) \ldots \)</p>
+<p class="p1">\({G_{X + Y}}( - 1) = p(0) - p(1) + p(2) - p(3) \ldots \)</p>
+<p class="p1">so \({\text{2P(even)}} = {G_{X + Y}}(1) + {G_{X + Y}}( - 1)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)(A1)</em></strong></p>
+<p class="p1">\({\text{P(even)}} = \frac{1}{2}(1 + {e^{ - 4\lambda }})\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1"><strong><em>[3 marks]</em></strong></p>
+<p class="p1"><strong><em>Total [21 marks]</em></strong></p>
+<div class='question_part_label'>g.</div>
+</div>

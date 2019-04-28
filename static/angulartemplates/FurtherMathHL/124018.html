@@ -1,0 +1,66 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1">Consider the following weighted graph.</p>
+<p class="p1" style="text-align: center;"><img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/3233/Schermafbeelding_2017-02-08_om_16.38.29.png" alt="M16/5/FURMA/HP2/ENG/TZ0/01" /></p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Determine whether or not the graph is Eulerian.</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Determine whether or not the graph is Hamiltonian.</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Use Kruskal’s algorithm to find a minimum weight spanning tree and state its weight.</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Deduce an upper bound for the total weight of a closed walk of minimum weight which <span class="s1">visits every vertex.</span></p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>d.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Explain how the result in part (b) can be used to find a different upper bound and state <span class="s1">its value.</span></p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>e.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">the graph is not Eulerian <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p1">because the graph contains vertices of odd degree <span class="Apple-converted-space">    </span><strong><em>R1</em></strong></p>
+<p class="p1"><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">the graph is Hamiltonian <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p2">because, for example, ABDFHGECA <span class="s1">is a Hamiltonian cycle <span class="Apple-converted-space">    </span><strong><em>R1</em></strong></span></p>
+<p class="p1"><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">correctly start to use Kruskal’s algorithm DE(1) <span class="Apple-converted-space">    </span><span class="s1"><strong><em>(M1)</em></strong></span></p>
+<p class="p2"><span class="s2">BC(2), FG(2) </span>or vice-versa <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p2"><span class="s2">DC(3), AC(3) </span>or vice-versa <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p1">GH(4) (rejecting AB<span class="s1">) <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></span></p>
+<p class="p1">DF(5) or EG(5) (rejecting BD<span class="s1">) <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></span></p>
+<p class="p2">total weight \( = 20\) <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p2"><strong><em>[6 marks]</em></strong></p>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">the minimum weight spanning tree can be traversed twice <span class="Apple-converted-space">    </span><strong><em>(M1)</em></strong></p>
+<p class="p2">so upper bound is \(2 \times 20 = 40\) <span class="Apple-converted-space">    </span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p1"><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>d.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">the Hamiltonian cycle found in (b) is a closed walk visiting every vertex and hence can be applied here <span class="Apple-converted-space">    </span><strong><em>R1</em></strong></p>
+<p class="p1">weight \( = 39\) <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p1"><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>e.</div>
+</div>

@@ -1,0 +1,34 @@
+<h2>Question</h2>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 26.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">Show that a positive integer, written in base 10, is divisible by 9 if the sum of its digits is divisible by 9.</span></p>
+<div class='marks'>[7]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">The representation of the positive integer <em>N</em> in base <em>p</em> is denoted by \({(N)_p}\) .</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">If \({({5^{{{(126)}_7}}})_7} = {({a_n}{a_{n - 1}} \ldots {a_1}{a_0})_7}\) , find \({a_0}\) .</span></p>
+<div class='marks'>[9]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">consider the decimal number \(A = {a_n}{a_{n - 1}} \ldots {a_0}\) &nbsp; &nbsp; <strong><em>M1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">\(A = {A_n} \times {10^n} + {a_{n - 1}} \times {10^{n - 1}} + \ldots + {a_1} \times 10 + {a_0}\) &nbsp; &nbsp; <strong><em>M1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">\( = {a_n} \times ({10^n} - 1) + {a_{n - 1}} \times ({10^{n - 1}} - 1) + \ldots + {a_1} \times (10 - 1) + {a_n} + {a_{n - 1}} + \ldots + {a_0}\) &nbsp; &nbsp; <strong><em>M1A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">\( = {a_n} \times 99 \ldots 9(n{\text{ digits}}) + {a_{n - 1}} \times 99 \ldots 9(n - 1{\text{ digits}}) + \ldots + 9{a_1} + {a_n} + {a_{n - 1}} + \ldots + {a_0}\) &nbsp; &nbsp; <strong><em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">all the numbers of the form 99&hellip;9 are divisible by 9 (to give 11&hellip;1), &nbsp; &nbsp; <strong><em>R1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">hence <em>A</em> is divisible by 9 if \(\sum\limits_{i = 0}^n {{a_i}} \) is divisible by 9 &nbsp; &nbsp; <strong><em>R1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;"><strong>Note:</strong> A method that uses the fact that \({10^t} \equiv 1(\bmod 9)\) is equally valid.</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">&nbsp;</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;"><strong><em>[7 marks]</em></strong></span></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">by Fermat&rsquo;s Little Theorem \({5^6} \equiv 1(\bmod 7)\) &nbsp; &nbsp; <strong><em>M1A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">\({(126)_7} = {(49 + 14 + 6)_{10}} = {(69)_{10}}\) &nbsp; &nbsp; <strong><em>M1A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">\({5^{{{(126)}_7}}} \equiv {5^{{{(11 \times 6 + 3)}_{10}}}} \equiv {5^{{{(3)}_{10}}}}(\bmod 7)\) &nbsp; &nbsp; <strong><em>M1A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">\({5^{{{(3)}_{10}}}} = {(125)_{10}} = {(17 \times 7 + 6)_{10}} \equiv 6(\bmod 7)\) &nbsp; &nbsp; <strong><em>M1A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">hence \({a_0} = 6\) &nbsp; &nbsp; <strong><em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 29.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;"><strong><em>[9 marks]</em></strong></span></p>
+<div class='question_part_label'>b.</div>
+</div>

@@ -1,0 +1,57 @@
+<h2>Question</h2>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Determine the probability generating function for \(X \sim {\text{B}}(1,{\text{ }}p)\).</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Explain why the probability generating function for \({\text{B}}(n,{\text{ }}p)\) is a polynomial of degree \(n\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Two independent random variables \({X_1}\) and \({X_2}\) are such that \({X_1} \sim {\text{B}}(1,{\text{ }}{p_1})\) <span class="s1">and \({X_2} \sim {\text{B}}(1,{\text{ }}{p_2})\)</span>. Prove that if \({X_1} + {X_2}\) has a binomial distribution then \({p_1} = {p_2}\).</p>
+<div class='marks'>[5]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">\({\text{P}}(X = 0) = 1 - p( = q);{\text{ P}}(X = 1) = p\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s1"><strong><em>(M1)(A1)</em></strong></span></p>
+<p class="p1">\({{\text{G}}_x}(t) = \sum\limits_r {{\text{P}}(X = r){t^r}\;\;\;} \)(or writing out term by term) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\( = q + pt\) &nbsp; &nbsp;&nbsp;<strong><em>A1</em></strong></p>
+<p class="p1"><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1"><strong>METHOD 1</strong></p>
+<p class="p1">\(PGF\) for \(B(n,{\text{ }}p)\) is \({(q + pt)^n}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1">which is a polynomial of degree \(n\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1"><strong>METHOD 2</strong></p>
+<p class="p1">in \(n\) independent trials, it is not possible to obtain more than \(n\) succes<span class="s1">ses (or equivalent, <em>eg</em>, \({\text{P}}(X &gt; n) = 0\)) <span class="Apple-converted-space">&nbsp; &nbsp; </span></span><strong><em>R1</em></strong></p>
+<p class="p1">so \({a_r} = 0\) for \(r &gt; n\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1"><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">let \(Y = {X_1} + {X_2}\)</p>
+<p class="p1">\({G_Y}(t) = ({q_1} + {p_1}t)({q_2} + {p_2}t)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\({G_Y}(t)\) has degree two, so if \(Y\) is binomial then</p>
+<p class="p1">\(Y \sim {\text{B}}(2,{\text{ }}p)\) for some \(p\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1">\({(q + pt)^2} = ({q_1} + {p_1}t)({q_2} + {p_2}t)\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>Note:</strong> <span class="Apple-converted-space">&nbsp; &nbsp; </span>The&nbsp;\(LHS\) could be seen as \({q^2} + 2pqt + {p^2}{t^2}\).</p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>METHOD 1</strong></p>
+<p class="p1">by considering the roots of both sides, \(\frac{{{q_1}}}{{{p_1}}} = \frac{{{q_2}}}{{{p_2}}}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\(\frac{{1 - {p_1}}}{{{p_1}}} = \frac{{1 - {p_2}}}{{{p_2}}}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">so \({p_1} = {p_2}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<p class="p1"><strong>METHOD 2</strong></p>
+<p class="p1">equating coefficients,</p>
+<p class="p1">\({p_1}{p_2} = {p^2},{\text{ }}{q_1}{q_2} = {q^2}{\text{ or }}(1 - {p_1})(1 - {p_2}) = {(1 - p)^2}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">expanding,</p>
+<p class="p1">\({p_1} + {p_2} = 2p\) so \({p_1},{\text{ }}{p_2}\) are the roots of \({x^2} - 2px + {p^2} = 0\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">so \({p_1} = {p_2}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<p class="p1"><strong><em>[5 marks]</em></strong></p>
+<p class="p1"><strong><em>Total [11 marks]</em></strong></p>
+<div class='question_part_label'>c.</div>
+</div>

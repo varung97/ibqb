@@ -1,0 +1,55 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1">Consider the functions \({f_n}(x) = {\sec ^n}(x),{\text{ }}\left| x \right| &lt; \frac{\pi }{2}\) and \({g_n}(x) = {f_n}(x)\tan x\).</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that</p>
+<p>(i)     \(\frac{{{\text{d}}{f_n}(x)}}{{{\text{d}}x}} = n{g_n}(x)\);</p>
+<p>(ii)     \(\frac{{{\text{d}}{g_n}(x)}}{{{\text{d}}x}} = (n + 1){f_{n + 2}}(x) - n{f_n}(x)\).</p>
+<div class='marks'>[5]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1"><span class="s1">(i) <span class="Apple-converted-space">    </span></span>Use these results to show that the Maclaurin series for the function \({f_5}(x)\) up to and including the term in \({x^4}\) is \(1 + \frac{5}{2}{x^2} + \frac{{85}}{{24}}{x^4}\).</p>
+<p class="p1">(ii) <span class="Apple-converted-space">    </span>By considering the general form of its higher derivatives explain briefly why all coefficients in the Maclaurin series for the function \({f_5}(x)\) <span class="s1">are either positive or zero.</span></p>
+<p class="p1">(iii) <span class="Apple-converted-space">    </span>Hence show that \({\sec ^5}(0.1) &gt; 1.02535\).</p>
+<div class='marks'>[14]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">    \(\frac{{{\text{d}}{f_n}(x)}}{{{\text{d}}x}} = n{\sec ^{n - 1}}(x)\sec (x)\tan (x)\)</span> <span class="Apple-converted-space">    </span><span class="s1"><strong><em>M1A1</em></strong></span></p>
+<p class="p1"><span class="Apple-converted-space">\( = n{g_n}(x)\)    </span><span class="s1"><strong><em>AG</em></strong></span></p>
+<p class="p2"> </p>
+<p class="p2">(ii) <span class="Apple-converted-space">    \(\frac{{{\text{d}}{g_n}(x)}}{{{\text{d}}x}} = \frac{{{\text{d}}{f_n}(x)}}{{{\text{d}}x}}\tan (x) + {f_n}(x){\sec ^2}(x)\)</span> <span class="Apple-converted-space">    </span><strong><em>M1</em></strong></p>
+<p class="p2">\(n{g_n}(x)\tan (x) + {f_{n + 2}}(x)\) or equivalent <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p2">\(n{f_n}(x){\tan ^2}(x) + {f_{n + 2}}(x)\) or equivalent <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p2"><span class="Apple-converted-space">\( = (n + 1){f_{n + 2}}(x) - n{f_n}(x)\)    </span><strong><em>AG</em></strong></p>
+<p class="p3"> </p>
+<p class="p2"><strong>Note: <span class="Apple-converted-space">    </span></strong>Award <strong><em>M1A1 </em></strong>for the correct differentiation of a product and <strong><em>A1 </em></strong>for an intermediate result clearly leading to the <strong><em>AG</em></strong>.</p>
+<p class="p3"> </p>
+<p class="p2"><strong><em>[5 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">    \({f_5}(0) = 1\)</span> <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p1"><span class="Apple-converted-space">\(\frac{{{\text{d}}{f_5}}}{{{\text{d}}x}}(0) = 5{g_5}(0) = 0\)    </span><strong><em>A1</em></strong></p>
+<p class="p1"><span class="Apple-converted-space">\(\frac{{{{\text{d}}^2}{f_5}}}{{{\text{d}}{x^2}}}(0) = 5\left( {6{f_7}(0) - 5{f_5}(0)} \right) = 5\)    </span><strong><em>A1</em></strong></p>
+<p class="p1"><span class="Apple-converted-space">\(\frac{{{{\text{d}}^3}{f_5}}}{{{\text{d}}{x^3}}} = 30\frac{{{\text{d}}{f_7}}}{{{\text{d}}x}} - 25\frac{{{\text{d}}{f_5}}}{{{\text{d}}x}}\)    </span><strong><em>M1</em></strong></p>
+<p class="p1">hence \(\frac{{{{\text{d}}^3}{f_5}}}{{{\text{d}}{x^3}}}(0) = 30 \times 0 - 25 \times 0 = 0\) <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p1"><span class="Apple-converted-space">\(\frac{{{{\text{d}}^4}{f_5}}}{{{\text{d}}{x^4}}} = 30\frac{{{{\text{d}}^2}{f_7}}}{{{\text{d}}{x^2}}} - 25\frac{{{{\text{d}}^2}{f_5}}}{{{\text{d}}{x^2}}} = 210(8{f_9} - 7{f_7}) - 25\frac{{{{\text{d}}^2}{f_5}}}{{{\text{d}}{x^2}}}\)    </span><strong><em>M1A1</em></strong></p>
+<p class="p1">hence \(\frac{{{{\text{d}}^4}{f_5}}}{{{\text{d}}{x^4}}}(0) = 210 - 125 = 85\) <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p1">hence \({f_5}(x) \approx 1 + \frac{5}{2}{x^2} + \frac{{85}}{{24}}{x^4}\) <span class="Apple-converted-space">    </span><strong><em>AG</em></strong></p>
+<p class="p2"> </p>
+<p class="p2">(ii) <span class="Apple-converted-space">    </span>each derivative of \({f_m}(x)\)<span class="s1"> </span>is a sum of terms of the form \({\text{A}}\,{\sec ^p}(x)\,\,{\tan ^q}(x)\)<span class="s1"> <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></span></p>
+<p class="p1"><span class="s2">where \(A \geqslant 0\)</span> <span class="Apple-converted-space">    </span><strong><em>A1</em></strong></p>
+<p class="p1">when \(x = 0\) is substituted the result is the sum of positive and/or zero terms <span class="Apple-converted-space">    </span><strong><em>R1</em></strong></p>
+<p class="p1"> </p>
+<p class="p1">(iii) <span class="Apple-converted-space">    </span>since the full series represents \({f_5}(x)\), the truncated series is a lower bound (or some equivalent statement) <span class="Apple-converted-space">    </span><strong><em>R1</em></strong></p>
+<p class="p1">hence \({\sec ^5}(0.1) &gt; 1 + \frac{5}{2}{0.1^2} + \frac{{85}}{{24}}{0.1^4}\) <span class="Apple-converted-space">    </span><strong><em>M1</em></strong></p>
+<p class="p1"><span class="Apple-converted-space">\( = 1.025354\)    </span><strong><em>A1</em></strong></p>
+<p class="p1"><span class="Apple-converted-space">\( &gt; 1.02535\)    </span><strong><em>AG</em></strong></p>
+<p class="p1"><strong><em>[14 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>

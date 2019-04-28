@@ -1,0 +1,46 @@
+<h2>Question</h2>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">The continuous random variable \(X\) takes values only in the interval [\(a\), \(b\)] and \(F\) </span><span style="font-family: times new roman,times; font-size: medium;">denotes its cumulative distribution function. Using integration by parts, show that:\[E(X) = b - \int_a^b {F(x){\rm{d}}x}. \]<br /></span></p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p><span style="font-family: times new roman,times; font-size: medium;">The continuous random variable \(Y\) has probability density function \(f\) given by:\[\begin{array}{*{20}{c}}<br />&nbsp; {f(y) = \cos y,}&amp;{0 \leqslant y \leqslant \frac{\pi }{2}} \\ <br />&nbsp; {f(y) = 0,}&amp;{{\text{elsewhere}}{\text{.}}} <br />\end{array}\]</span></p>
+<p style="margin-left: 30px;"><span style="font-family: times new roman,times; font-size: medium;">&nbsp; (i)&nbsp;&nbsp;&nbsp;&nbsp; Obtain an expression for the cumulative distribution function of \(Y\) , valid </span><span style="font-family: times new roman,times; font-size: medium;">for \(0 \le y \le \frac{\pi }{2}\) . Use the result in (a) to determine \(E(Y)\) .</span></p>
+<p style="margin-left: 30px;"><span style="font-family: times new roman,times; font-size: medium;">&nbsp; (ii)&nbsp;&nbsp;&nbsp;&nbsp; The random variable \(U\) is defined by \(U = {Y^n}\) , where \(n \in {\mathbb{Z}^ + }\) . Obtain </span><span style="font-family: times new roman,times; font-size: medium;">an expression for the cumulative distribution function of \(U\) valid for \(0 \le u \le {\left( {\frac{\pi }{2}} \right)^n}\) .</span></p>
+<p style="margin-left: 30px;"><span style="font-family: times new roman,times; font-size: medium;">&nbsp; (iii)&nbsp;&nbsp;&nbsp;&nbsp; The medians of \(U\) and \(Y\) are denoted respectively by \({m_u}\) and \({m_y}\) . </span><span style="font-family: times new roman,times; font-size: medium;">Show that \({m_u} = m_y^n\) .</span></p>
+<div class='marks'>[14]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\(E(X) = \int_a^b {xf(x){\rm{d}}x} \)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>M1</em></strong></span></p>
+<p style="margin-left: 30px;" align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\( = \left[ {xF(x)} \right]_a^b - \int_a^b {F(x){\rm{d}}x} \)&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: times new roman,times; font-size: medium;">&nbsp;<strong><em>A1</em></strong></span></p>
+<p style="margin-left: 30px;" align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\( = bF(b) - aF(a) - \int_a^b {F(x){\rm{d}}x} \)&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: times new roman,times; font-size: medium;">&nbsp;<strong><em>A1</em></strong></span></p>
+<p style="margin-left: 30px;" align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\( = b - \int_a^b {F(x){\rm{d}}x} \)</span><span style="font-family: times new roman,times; font-size: medium;"> because \(F(a) = 0\) and \(F(b) = 1\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>A1</em></strong></span></p>
+<p><strong><em><span style="font-family: times new roman,times; font-size: medium;">[4 marks]</span></em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p><span style="font-family: times new roman,times; font-size: medium;">(i)&nbsp;&nbsp;&nbsp;&nbsp; let \(G\) denote the cumulative distribution function of \(Y\)</span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">\(G(y) = \int_0^y {\cos t{\rm{d}}t} \)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>M1</em></strong></span></p>
+<p style="margin-left: 30px;"><span style="font-family: times new roman,times; font-size: medium;">\( = \left[ {\sin t} \right]_0^y\)&nbsp;&nbsp;&nbsp; &nbsp;<strong><em>(A1)</em></strong></span></p>
+<p style="margin-left: 30px;"><span style="font-family: times new roman,times; font-size: medium;">\( = \sin y\)&nbsp;&nbsp;&nbsp;&nbsp;<em><strong>&nbsp;A1</strong></em></span></p>
+<p><span style="font-family: Times New Roman; font-size: medium;">\(E(Y) = \frac{\pi }{2} - \int_0^{\frac{\pi }{2}} {\sin y{\rm{d}}y} \)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><em><span style="font-family: times new roman,times; font-size: medium;">M1</span></em></strong></p>
+<p style="margin-left: 30px;"><span style="font-family: Times New Roman; font-size: medium;">\( = \frac{\pi }{2} + \left[ {\cos y} \right]_0^{\frac{\pi }{2}}\)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><em><span style="font-family: times new roman,times; font-size: medium;">A1</span></em></strong></p>
+<p style="margin-left: 30px;"><span style="font-family: times new roman,times; font-size: medium;">\( = \frac{\pi }{2} - 1\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>A1</em></strong></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">&nbsp;</span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">(ii) &nbsp; &nbsp; CDF of \(U = P(U \le u)\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>M1</em></strong></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">\( = P({Y^n} \le u)\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><strong>A1</strong></em></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">\( = P({Y^{}} \le {u^{\frac{1}{n}}})\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>A1</em></strong></span></p>
+<p style="margin-left: 30px;"><span style="font-family: times new roman,times; font-size: medium;">\( = G({u^{\frac{1}{n}}})\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>(A1)</em></strong></span></p>
+<p style="margin-left: 30px;"><span style="font-family: Times New Roman; font-size: medium;">\( = \sin \left( {{u^{\frac{1}{n}}}} \right)\)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><em><span style="font-family: times new roman,times; font-size: medium;">A1</span></em></strong></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">&nbsp;</span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">(iii)&nbsp;&nbsp;&nbsp;&nbsp; \({m_y}\) satisfies the equation \(\sin {m_y} = \frac{1}{2}\)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><em><span style="font-family: times new roman,times; font-size: medium;">A1</span></em></strong></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">\({m_u}\) satisfies the equation \(\sin \left( {m_u^{\frac{1}{n}}} \right) = \frac{1}{2}\)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><em><span style="font-family: times new roman,times; font-size: medium;">A1</span></em></strong></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">therefore \({m_y} = m_u^{\frac{1}{n}}\)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><em><span style="font-family: times new roman,times; font-size: medium;">A1</span></em></strong></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">\({m_u} = m_y^n\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>AG</em></strong></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;"><strong><em>&nbsp;</em></strong></span></p>
+<p><strong><em><span style="font-family: times new roman,times; font-size: medium;"> [14 marks]</span></em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>

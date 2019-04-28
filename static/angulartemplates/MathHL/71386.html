@@ -1,0 +1,61 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1">A simple connected planar graph, has \(e\)&nbsp;edges, \(v\)&nbsp;vertices and \(f\)&nbsp;faces.</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Show that \(2e \ge 3f{\text{ if }}v &gt; 2\).</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Hence show that \({K_5}\), the complete graph on five vertices, is not planar.</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>State the handshaking lemma.</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Determine the value of \(f\), if each vertex has degree \(2\).</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Draw an example of a simple connected planar graph on&nbsp;\(6\) vertices each of degree \(3\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong>METHOD 1</strong></p>
+<p class="p1">attempting to use \(f = e - v + 2\) and \(e \le 3v - 6\) (if \(v &gt; 2\)) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1">\(2e \le 6v - 12 = 6(e - f + 2) - 12\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1A1</em></strong></p>
+<p class="p1">leading to \(2e \ge 3f\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<p class="p1"><strong>METHOD 2</strong></p>
+<p class="p1">each face is bounded by at least three edges <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Award <strong><em>A1 </em></strong>for stating \(e \ge 3f\).</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">each edge either separates two faces or, if an edge is interior to a face, it gets counted twice <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Award <strong><em>R1 </em></strong>for stating that each edge contributes two to the sum of the degrees of the faces (or equivalent) <em>ie</em>, \(\sum {\deg (F) = 2e} \).</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">adding up the edges around each face <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1">leading to \(2e \ge 3f\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\({K_5}\) has \(e = 10\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">if the graph is planar, \(f = 7\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">this contradicts the inequality obtained above <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1">hence the graph is non-planar <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<p class="p1"><strong><em>[6 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>the sum of the vertex degrees \( = 2e\) (or is even) or equivalent <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>if each vertex has degree \(2\), then \(2v = 2e\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">substituting \(v = e\) into Euler&rsquo;s formula <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\(f = 2\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1"><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">for example,</p>
+<p class="p1"><img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/1292/Schermafbeelding_2016-01-08_om_08.02.23.png" alt="" />&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>A2</strong></em></p>
+<p class="p1"><em><strong>[2 marks]</strong></em></p>
+<p class="p1"><em><strong>Total [12 marks]</strong></em></p>
+<div class='question_part_label'>c.</div>
+</div>

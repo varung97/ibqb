@@ -1,0 +1,38 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1">The weights of the edges in the complete graph \(G\)&nbsp;are shown in the following table.</p>
+<p class="p1" style="text-align: center;"><img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/3226/Schermafbeelding_2017-02-06_om_05.29.01.png" alt="M16/5/MATHL/HP3/ENG/TZ0/DM/02" /></p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1"><span class="s1">Starting at A</span>, use the nearest neighbour algorithm to find an upper bound for the travelling salesman problem for \(G\).</p>
+<div class='marks'>[5]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1"><span class="s1">By first removing A </span>, use the deleted vertex algorithm to find a lower bound for the travelling salesman problem for \(G\).</p>
+<div class='marks'>[7]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">attempt to use the nearest neighbour algorithm <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\(\begin{array}{*{20}{l}} {{\text{the nearest neighbour path is}}}&amp;{{\text{A}} \to {\text{D}} \to {\text{C }}A1} \\ {}&amp;{ \to {\text{E}} \to {\text{B}} \to {\text{F}} \to {\text{A }}A1} \end{array}\)</p>
+<p class="p1">the upper bound is the total weight of this path, <em>ie</em> <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p2"><span class="Apple-converted-space">\(8 + 7 + 8 + 10 + 13 + 9 = 55\) &nbsp; &nbsp;</span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>The <strong><em>(M1) </em></strong>is for adding 6 weights together.</p>
+<p class="p1"><strong><em>[5 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">attempt to use an appropriate algorithm, with A <span class="s1">deleted, to determine the </span>minimum spanning tree, <em>eg </em>Kruskal&rsquo;s <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p2"><span class="s2">CD </span>(7) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">CE, CB (8,9) <span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p1">DF or EF (11) <span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p1">the weight of this minimum spanning tree is 35 <span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s1"><strong><em>(A1)</em></strong></span></p>
+<p class="p1">adding in the two smallest weights joining A (AD and AF) <span class="s1">to this tree gives </span>a lower bound <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p2">of \(35 + 8 + 9 = 52\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p2"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Clear diagrams aiding solutions are acceptable in (a) and (b).</p>
+<p class="p2"><strong><em>[7 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>

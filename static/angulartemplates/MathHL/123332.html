@@ -1,0 +1,41 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1">The continuous random variable \(X\) has probability density function</p>
+<p class="p1">\[f(x) = \left\{ {\begin{array}{*{20}{c}} {{{\text{e}}^{ - x}}}&amp;{x \geqslant 0} \\ 0&amp;{x &lt; 0} \end{array}.} \right.\]</p>
+<p class="p1">The discrete random variable \(Y\) is defined as the integer part of \(X\), that is the largest integer less than or equal to \(X\).</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Show that the probability distribution of \(Y\) <span class="s1">is given by \({\text{P}}(Y = y) = {{\text{e}}^{ - y}}(1 - {{\text{e}}^{ - 1}}),{\text{ }}y \in \mathbb{N}\).</span></p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Show that \(G(t)\), the probability generating function of \(Y\), is given by \(G(t) = \frac{{1 - {{\text{e}}^{ - 1}}}}{{1 - {{\text{e}}^{ - 1}}t}}\).</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Hence determine the value of \({\text{E}}(Y)\)&nbsp;correct to three significant figures.</p>
+<div class='marks'>[8]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1"><span class="Apple-converted-space">\({\text{P}}(Y = y) = \int_y^{y + 1} {{{\text{e}}^{ - x}}{\text{d}}x} \) &nbsp; &nbsp;</span><strong><em>M1A1</em></strong></p>
+<p class="p2"><span class="Apple-converted-space">\( = {[ - {{\text{e}}^{ - x}}]^{y + 1}}y\) &nbsp; &nbsp;</span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p2"><span class="Apple-converted-space">\( = &nbsp;- {{\text{e}}^{ - (y + 1)}} + {{\text{e}}^{ - y}}\) &nbsp; &nbsp;</span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p3"><span class="Apple-converted-space">\( = {{\text{e}}^{ - y}}(1 - {{\text{e}}^{ - 1}})\) &nbsp; &nbsp;</span><span class="s1"><strong><em>AG</em></strong></span></p>
+<p class="p1"><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>attempt to use \(G(t) = \sum {{\text{P}}(Y = y){t^y}} \)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p2"><span class="Apple-converted-space">\( = \sum\limits_{y = 0}^\infty &nbsp;{{{\text{e}}^{ - y}}(1 - {{\text{e}}^{ - 1}}){t^y}} \) &nbsp; &nbsp;</span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p2"><span class="s1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong></span>Accept a listing of terms without the use of \(\Sigma \).</p>
+<p class="p1">this is an infinite geometric series with first term \(1 - {{\text{e}}^{ - 1}}\) and common ratio \({{\text{e}}^{ - 1}}t\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p5"><span class="Apple-converted-space">\(G(t) = \frac{{1 - {{\text{e}}^{ - 1}}}}{{1 - {{\text{e}}^{ - 1}}t}}\) &nbsp; &nbsp;</span><span class="s1"><strong><em>AG</em></strong></span></p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; \({\text{E}}(Y) = G'(1)\)</span>&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1"><span class="s2">\(G'(t) = \frac{{1 - {{\text{e}}^{ - 1}}}}{{{{(1 - {{\text{e}}^{ - 1}}t)}^2}}} \times {{\text{e}}^{ - 1}}\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span></span><strong><em>(M1)(A1)</em></strong></p>
+<p class="p2"><span class="Apple-converted-space">\({\text{E}}(Y) = \frac{{{{\text{e}}^{ - 1}}}}{{(1 - {{\text{e}}^{ - 1}})}}\) &nbsp; &nbsp;</span><span class="s1"><strong><em>(A1)</em></strong></span></p>
+<p class="p2"><span class="Apple-converted-space">\( = 0.582\) &nbsp; &nbsp;</span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Allow the use of GDC to determine \(G'(1)\).</p>
+<p class="p1"><strong><em>[8 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>

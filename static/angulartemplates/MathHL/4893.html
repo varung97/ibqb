@@ -1,0 +1,61 @@
+<h2>Question</h2>
+<div class='specification'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">Consider the differential equation \(\frac{{{\text{d}}y}}{{{\text{d}}x}} = \frac{{{y^2}}}{{1 + x}}\), where <em>x </em>&gt; &minus;1 and <em>y </em>= 1 when <em>x </em>= 0 .</span></p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">Use Euler&rsquo;s method, with a step length of 0.1, to find an approximate value of <em>y&nbsp;</em>when <em>x </em>= 0.5.</span></p>
+<div class='marks'>[7]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">(i) &nbsp; &nbsp; Show that \(\frac{{{{\text{d}}^2}y}}{{{\text{d}}{x^2}}} = \frac{{2{y^3} - {y^2}}}{{{{(1 + x)}^2}}}\).</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">(ii) &nbsp; &nbsp; Hence find the Maclaurin series for <em>y</em>, up to and including the term in \({x^2}\)<span style="font: 7.0px Helvetica;">&nbsp;</span>.</span></p>
+<div class='marks'>[8]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">(i) &nbsp; &nbsp; Solve the differential equation.</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">(ii) &nbsp; &nbsp; Find the value of <em>a </em>for which \(y \to \infty \) as \(x \to a\).</span></p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">attempt the first step of</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\({y_{n + 1}} = {y_n} + (0.1)f({x_n},\,{y_n})\) with \({y_0} = 1,{\text{ }}{x_0} = 0\) &nbsp; &nbsp; <strong><em>(M1)</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\({y_1} = 1.1\) &nbsp; &nbsp;<strong> <em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\({y_2} = 1.1 + (0.1)\frac{{{{1.1}^2}}}{{1.1}} = 1.21\) &nbsp; &nbsp;<strong> <em>(M1)A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\({y_3} = 1.332(0)\) &nbsp; &nbsp;<strong> <em>(A1)</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\({y_4} = 1.4685\) &nbsp; &nbsp;<strong> <em>(A1)</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\({y_5} = 1.62\) &nbsp; &nbsp;<strong> <em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><strong><em><span style="font-family: 'times new roman', times; font-size: medium;">[7 marks]</span><br /></em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">(i) &nbsp; &nbsp; recognition of both quotient rule and implicit differentiation &nbsp; &nbsp;&nbsp;<strong><em>M1<br /></em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\(\frac{{{{\text{d}}^2}y}}{{{\text{d}}{x^2}}} = \frac{{(1 + x)2y\frac{{{\text{d}}y}}{{{\text{d}}x}} - {y^2} \times 1}}{{{{(1 + x)}^2}}}\) &nbsp; &nbsp;<strong> <em>A1A1</em></strong></span><strong style="font-family: 'times new roman', times; font-size: medium;">&nbsp;</strong></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;"><strong>Note: </strong>Award <strong><em>A1 </em></strong>for first term in numerator, <strong><em>A1 </em></strong>for everything else correct.</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;">&nbsp;</p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( = \frac{{(1 + x)2y\frac{{{y^2}}}{{1 + x}} - {y^2} \times 1}}{{{{(1 + x)}^2}}}\) &nbsp; &nbsp;<strong> <em>M1A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( = \frac{{2{y^3} - {y^2}}}{{{{(1 + x)}^2}}}\) &nbsp; &nbsp;<strong> <em>AG</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;"><strong><em>&nbsp;</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">(ii) &nbsp; &nbsp; attempt to use \(y = y(0) + x\frac{{{\text{d}}y}}{{{\text{d}}x}}(0) + \frac{{{x^2}}}{{2!}}\frac{{{{\text{d}}^2}y}}{{{\text{d}}{x^2}}}(0) + ...\) &nbsp; &nbsp; <strong><em>(M1)</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( = 1 + x + \frac{{{x^2}}}{2}\) &nbsp; &nbsp;<strong> <em>A1A1</em></strong></span><strong style="font-family: 'times new roman', times; font-size: medium;">&nbsp;</strong></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;"><strong>Note: </strong>Award <strong><em>A1 </em></strong>for correct evaluation of \(y(0),{\text{ }}\frac{{dy}}{{dx}}(0),{\text{ }}\frac{{{d^2}y}}{{d{x^2}}}(0)\), <strong><em>A1 </em></strong>for&nbsp;correct series.</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;">&nbsp;</p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><strong><em><span style="font-family: 'times new roman', times; font-size: medium;">[8 marks]</span><br /></em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">(i) &nbsp; &nbsp; separating the variables \(\int {\frac{1}{{{y^2}}}{\text{d}}y = \int {\frac{1}{{1 + x}}{\text{d}}x} } \) &nbsp; &nbsp; <strong><em>M1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">obtain \( - \frac{1}{y} = \ln (1 + x) + (c)\) &nbsp; &nbsp; <strong><em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">impose initial condition \( - 1 = \ln 1 + c\) &nbsp; &nbsp; <strong><em>M1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">obtain \(y = \frac{1}{{1 - \ln (1 + x)}}\) &nbsp; &nbsp; <strong><em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;"><strong><em>&nbsp;</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">(ii) &nbsp; &nbsp; \(y \to \infty \) if \(\ln (1 + x) \to 1\) , so <em>a</em> = e &ndash; 1 &nbsp; &nbsp;&nbsp;<strong><em>(M1)A1</em></strong></span><strong style="font-family: 'times new roman', times; font-size: medium;">&nbsp;</strong></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;"><strong>Note</strong>: To award <strong><em>A1 </em></strong>must see either \(x \to e - 1\) or <em>a</em> = <em>e</em> &ndash; 1 . Do not&nbsp;accept <em>x</em> = <em>e</em> &ndash; 1.</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;">&nbsp;</p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><strong><em><span style="font-family: 'times new roman', times; font-size: medium;">[6 marks]</span><br /></em></strong></p>
+<div class='question_part_label'>c.</div>
+</div>

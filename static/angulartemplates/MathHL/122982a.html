@@ -1,0 +1,41 @@
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1"><span class="s1">as \(t\) </span>moves through the intervals \([0,{\text{ }}\pi ],{\text{ }}[\pi ,{\text{ }}2\pi ],{\text{ }}[2\pi ,{\text{ }}3\pi ],{\text{ }}[3\pi ,{\text{ }}4\pi ]\), <span class="s1"><em>etc</em></span>, the sign of \(\sin t\), (and therefore the sign of the integral) alternates \( + ,{\text{ }} - ,{\text{ }} + ,{\text{ }} - \), <span class="s1"><em>etc</em>, so that the series is alternating <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></span></p>
+<p class="p1"><span class="s1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Award <strong><em>R1 </em></strong></span>only if it includes a clear reason that justifies that the sign of the integrand alternates between &minus; and + <span class="s1">and this pattern is valid for all the terms.</span></p>
+<p class="p3">The change of signs can be justified by a labelled graph of \(y = \sin (x)\) or \(y = \frac{{\sin x}}{x}\)&nbsp;<span class="s2">that shows the intervals&nbsp;\([0,{\text{ }}\pi ],{\text{ }}[\pi ,{\text{ }}2\pi ],{\text{ }}[2\pi ,{\text{ }}3\pi ],{\text{ }} \ldots \)</span></p>
+<p class="p3"><strong><em>[1 mark]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp;&nbsp;\({u_{n + 1}} = \int_{(n + 1)\pi }^{(n + 2)\pi } {\frac{{\sin t}}{t}{\text{d}}t} \)</span></p>
+<p class="p1"><strong><em>(M1)</em></strong></p>
+<p class="p1">put \(T = t--\pi \)&nbsp;<span class="s1">and \({\text{d}}T = {\text{d}}t\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span></span><strong><em>(M1)</em></strong></p>
+<p class="p1">the limits change to&nbsp;\(n\pi ,{\text{ }}(n + 1)\pi \)</p>
+<p class="p1">\(\left| {{u_{n + 1}}} \right| = \int_{n\pi }^{(n + 1)\pi } {\frac{{\left| {\sin (T + \pi )} \right|}}{{T + \pi }}{\text{d}}T} \) (or equivalent) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p2">\(\left| {\sin (T + \pi )} \right| = \left| {\sin (T)} \right|\) or \(\sin (T + \pi ) = &nbsp;- \sin (T)\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s2"><strong><em>(M1)</em></strong></span></p>
+<p class="p2">\( = \int_{n\pi }^{(n + 1)\pi } {\frac{{\left| {\sin T} \right|}}{{T + \pi }}{\text{d}}T} \)</p>
+<p class="p2"><span class="Apple-converted-space">\( &lt; \int_{n\pi }^{(n + 1)\pi } {\frac{{\left| {\sin T} \right|}}{T}{\text{d}}T = \left| {{u_n}} \right|} \) &nbsp; &nbsp;</span><span class="s2"><strong><em>A1AG</em></strong></span></p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp;&nbsp;\(\left| {{u_n}} \right| = \int_{n\pi }^{(n + 1)\pi } {\frac{{\sin t}}{t}{\text{d}}t} \)</span></p>
+<p class="p1"><span class="Apple-converted-space">\( &lt; \int_{n\pi }^{(n + 1)\pi } {\frac{1}{t}{\text{d}}t} \) &nbsp; &nbsp;</span><strong><em>M1</em></strong></p>
+<p class="p1"><span class="Apple-converted-space">\( = [\ln t]_{n\pi }^{(n + 1)\pi }\) &nbsp; &nbsp;</span><strong><em>A1</em></strong></p>
+<p class="p1"><span class="Apple-converted-space">\( = \ln \left( {\frac{{n + 1}}{n}} \right)\) &nbsp; &nbsp;</span><strong><em>A1</em></strong></p>
+<p class="p1">\( \to \ln 1 = 0\) as&nbsp;\(n \to \infty \)</p>
+<p class="p2"><span class="s2">from part (i) \(\left| {{u_n}} \right|\)&nbsp;</span>is a decreasing sequence and since \(\mathop {\lim }\limits_{n \to \infty } \left| {{u_n}} \right| = 0\), <span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s2"><strong><em>R1</em></strong></span></p>
+<p class="p1">the series is convergent <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<p class="p1"><strong><em>[9 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">attempt to calculate the partial sums \(\sum\limits_{i = 0}^{n - 1} {{u_i} = \int_0^{n\pi } {\frac{{\sin t}}{t}{\text{d}}t} } \)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1">the first partial sums are</p>
+<p class="p1"><img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/3227/Schermafbeelding_2017-02-06_om_16.13.20.png" alt="M16/5/MATHL/HP3/ENG/TZ0/SE/M/05.c" /></p>
+<p class="p1">two consecutive partial sums for \(n \geqslant 4\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1A1</em></strong></p>
+<p class="p1">(<span class="s1"><em>eg</em>&nbsp;\({S_4} = 1.49\)&nbsp;</span>and \({S_5} = 1.63\) or \({S_{100}} = 1.567 \ldots \) and \({S_{101}} = 1.573 \ldots \))</p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>These answers must be given to a minimum of 3 significant figures.</p>
+<p class="p1">the sum to infinity lies between any two consecutive partial sums,</p>
+<p class="p3"><span class="s2"><em>eg </em></span>between 1.49 and 1.63 <span class="Apple-converted-space">&nbsp; &nbsp; </span><span class="s2"><strong><em>R1</em></strong></span></p>
+<p class="p1">so that \(S &lt; 1.65\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Award <strong><em>A1A1R1 </em></strong>to candidates who calculate at least two partial sums for only odd values of \(n\)&nbsp;and state that the upper bound is less than these values.</p>
+<p class="p1"><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>c.</div>
+</div>

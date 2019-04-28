@@ -1,0 +1,50 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1">The following graph represents the cost in dollars of travelling by bus between 10 towns in a particular province.</p>
+<p class="p1" style="text-align: center;"><img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/1201/Schermafbeelding_2015-12-11_om_14.37.25.png" alt="" /></p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Use Dijkstra&rsquo;s algorithm to find the cheapest route between&nbsp;\(A\) and \(J\), and state its cost.</p>
+<div class='marks'>[7]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">For the remainder of the question you may find the cheapest route between any two towns by inspection.</p>
+<p class="p1">It is given that the total cost of travelling on all the roads without repeating any is \(\$ 139\).</p>
+<p class="p1">A tourist decides to go over all the roads at least once, starting and finishing at town \(A\).</p>
+<p class="p1">Find the lowest possible cost of his journey, stating clearly which roads need to be travelled more than once. You must fully justify your answer.</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1"><img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/1202/Schermafbeelding_2015-12-11_om_14.45.31.png" alt="" />&nbsp; &nbsp; &nbsp;<strong><em>M1A1A1A1</em></strong></p>
+<p class="p1">(<strong><em>M1</em></strong> for an attempt at Dijkstra&rsquo;s)</p>
+<p class="p1">(<strong><em>A1</em></strong> for value of \({\text{D}} = 17\))</p>
+<p class="p1">(<strong><em>A1</em></strong> for value of \({\text{H}} = 22\))</p>
+<p class="p1">(<strong><em>A1</em></strong> for value of \({\text{G}} = 22\))</p>
+<p class="p1">route is&nbsp;\(ABDHJ\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)A1</em></strong></p>
+<p class="p1">cost is&nbsp;\($27\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>Note:</strong> <span class="Apple-converted-space">&nbsp; &nbsp; </span>Accept other layouts.</p>
+<p class="p1"><em><strong>[7 marks]</strong></em></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">there are 4 odd vertices \(A\), \(D\),&nbsp;\(F\) and&nbsp;\(J\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">these can be joined up in 3 ways with the following extra costs</p>
+<p class="p1">\(AD\)&nbsp;and \(FJ\)\(\;\;\;17 + 13 = 30\)</p>
+<p class="p1">\(AF\)&nbsp;and \(DJ\)\(\;\;\;23 + 10 = 33\)</p>
+<p class="p1">\(AJ\)&nbsp;and \(DF\)\(\;\;\;27 + 12 = 39\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1A1A1</em></strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Award <strong><em>M1 </em></strong>for an attempt to find different routes.</p>
+<p class="p1">Award <strong><em>A1A1 </em></strong>for correct values for all three costs <strong><em>A1 </em></strong>for one correct.</p>
+<p class="p2">&nbsp;</p>
+<p class="p1">need to repeat \(AB\), \(BD\),&nbsp;\(FG\) and&nbsp;\(GJ\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">total cost is \(139 + 30 = \$ 169\)&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>A1</strong></em></p>
+<p class="p1"><em><strong>[6 marks]</strong></em></p>
+<p class="p1"><em><strong>Total [13 marks]</strong></em></p>
+<p class="p1">&nbsp;</p>
+<div class='question_part_label'>b.</div>
+</div>

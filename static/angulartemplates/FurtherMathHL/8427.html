@@ -1,0 +1,41 @@
+<h2>Question</h2>
+<div class='specification'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">The weights of potatoes in a shop are normally distributed with mean \(98\) grams and </span><span style="font-family: times new roman,times; font-size: medium;">standard deviation \(16\) grams.</span></p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">The shopkeeper places \(100\) randomly chosen potatoes on a weighing machine. </span><span style="font-family: times new roman,times; font-size: medium;">Find the probability that their total weight exceeds \(10\) kilograms.</span></p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">Find the minimum number of randomly selected potatoes which are needed to </span><span style="font-family: times new roman,times; font-size: medium;">ensure that their total weight exceeds \(10\) kilograms with probability greater </span><span style="font-family: times new roman,times; font-size: medium;">than \(0.95\).</span></p>
+<div class='marks'>[8]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">let \(T\) denote the total weight, then</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\(T \sim N(9800,25600)\)&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>(M1)(A1)</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\({\rm{P}}(T &gt; 10000) = 0.106\)&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>A1</strong></em></span></p>
+<p><em><strong><span style="font-family: times new roman,times; font-size: medium;">[3 marks]</span></strong></em></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">let there be \(n\) potatoes, in this case,</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\(T \sim {\rm{N}}(98n,256n)\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><strong>A1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">we require</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\({\rm{P}}(T &gt; 10000) &gt; 0.95\)&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>(M1)</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">or equivalently</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\({\rm{P}}(T \le 10000) &lt; 0.05\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">standardizing,</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\({\rm{P}}\left( {Z \le \frac{{10000 - 98n}}{{16\sqrt n }}} \right) &lt; 0.05\)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><em><span style="font-family: times new roman,times; font-size: medium;">A1</span></em></strong></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\(\frac{{10000 - 98n}}{{16\sqrt n }} &lt; - 1.6449 \ldots \)&nbsp;&nbsp;&nbsp;  <strong><em>(A1)</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\(98n - 26.32\sqrt n&nbsp; - 10000 &gt; 0\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><strong>A1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">solving the corresponding equation, \(n = 104.7 \ldots \)&nbsp;&nbsp;&nbsp;  <strong><em>(A1)</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">the required minimum value is \(105\) &nbsp;&nbsp;&nbsp; <strong><em>A1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;"><strong>Note</strong>: Part (b) could also be solved using SOLVER and normalcdf, or by trial and </span><span style="font-family: times new roman,times; font-size: medium;">improvement.</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;"><strong>Note</strong>: Allow the use of \( = \) instead of \( &lt; \) and&nbsp;\( &gt; \) throughout.</span></p>
+<p><strong><em><span style="font-family: times new roman,times; font-size: medium;">[8 marks]</span></em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>

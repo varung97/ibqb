@@ -1,0 +1,97 @@
+<h2>Question</h2>
+<div class='specification'>
+<p>The set \({S_n} = \{ 1,{\text{ }}2,{\text{ }}3,{\text{ }} \ldots ,{\text{ }}n - 2,{\text{ }}n - 1\} \), where \(n\) is a prime number greater than 2, and \({ \times _n}\) denotes multiplication modulo \(n\).</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that there are no elements \(a,{\text{ }}b \in {S_n}\) such that \(a{ \times _n}b = 0\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>a.i.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that, for \(a,{\text{ }}b,{\text{ }}c \in {S_n},{\text{ }}a{ \times _n}b = a{ \times _n}c \Rightarrow b = c\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>a.ii.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that \({G_n} = \{ {S_n},{\text{ }}{ \times _n}\} \) is a group. You may assume that \({ \times _n}\) is associative.</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that the order of the element \((n - 1)\) is 2.</p>
+<div class='marks'>[1]</div>
+<div class='question_part_label'>c.i.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that the inverse of the element 2 is \(\frac{1}{2}(n + 1)\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>c.ii.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Explain why the inverse of the element 3 is \(\frac{1}{3}(n + 1)\) for some values of \(n\) but not for other values of \(n\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>c.iii.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Determine the inverse of the element 3 in&nbsp;\({G_{11}}\).</p>
+<div class='marks'>[1]</div>
+<div class='question_part_label'>c.iv.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Determine the inverse of the element 3 in \({G_{31}}\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>c.v.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p>\(a{ \times _n}b = 0 \Rightarrow ab = \) a multiple of \(n\) (or vice versa) &nbsp; &nbsp; <strong><em>R1</em></strong></p>
+<p>since \(n\) is prime, this can only occur if \(a = 1\) and \(b = \) multiple of \(n\) which is impossible because the multiple of \(n\) would not belong to \({S_n}\) &nbsp; &nbsp; <strong><em>R1</em></strong></p>
+<p><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>a.i.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>\(a{ \times _n}b = a{ \times _n}c \Rightarrow a{ \times _n}(b - c) = 0\) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>suppose \(b \ne c\) and let \(b &gt; c\) (without loss of generality)</p>
+<p>\((b - c) \in {S_n}\) and from (i), \(a{ \times _n}(b - c) = 0\) is a contradiction &nbsp; &nbsp; <strong><em>R1</em></strong></p>
+<p>therefore \(b = c\) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>a.ii.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>\({G_n}\) is associative because modular multiplication is associative &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>\({G_n}\) is closed because the value of \(a{ \times _n}b\) always lies between 1 and \(n - 1\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>the identity is 1 &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>consider \(a{ \times _n}b\) where \(b\) can take \(n - 1\) possible values. Using the result from (a)(ii), this will result in \(n - 1\) different values, one of which will be 1, which will give the inverse of \(a\) &nbsp; &nbsp; <strong><em>R1</em></strong></p>
+<p>\({G_n}\) is therefore a group &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>\({(n - 1)^2} = {n^2} - 2n + 1 \equiv 1(\bmod n)\) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>so that \((n - 1){ \times _n}(n - 1) = 1\) and \(n - 1\) has order 2 &nbsp; &nbsp; <strong><em>R1AG</em></strong></p>
+<p><strong><em>[??? marks]</em></strong></p>
+<div class='question_part_label'>c.i.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>consider \(2 \times \frac{1}{2}(n + 1) = n + 1 = 1(\bmod n)\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>since \(\frac{1}{2}(n + 1)\) is an integer for al \(n\), it is the inverse of 2 &nbsp; &nbsp; <strong><em>R1AG</em></strong></p>
+<p><strong><em>[??? marks]</em></strong></p>
+<div class='question_part_label'>c.ii.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>consider \(3 \times \frac{1}{3}(n + 1) = n + 1 = 1(\bmod n)\) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>therefore \(\frac{1}{3}(n + 1)\) is the inverse of 3 if it is an integer but not otherwise &nbsp; &nbsp; <strong><em>R1</em></strong></p>
+<p><strong><em>[??? marks]</em></strong></p>
+<div class='question_part_label'>c.iii.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>the inverse of 3 in \({G_{11}}\) is 4 &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p><strong><em>[??? marks]</em></strong></p>
+<div class='question_part_label'>c.iv.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>the inverse of 3 in \({G_{31}}\) is 21 &nbsp; &nbsp; <strong><em>(M1)A1</em></strong></p>
+<p><strong><em>[??? marks]</em></strong></p>
+<div class='question_part_label'>c.v.</div>
+</div>

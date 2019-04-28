@@ -1,0 +1,90 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1">A company makes containers of yogurt. The volume of yogurt in the containers is normally distributed with a mean of&nbsp;\(260\) ml and standard deviation of&nbsp;\(6\) ml.</p>
+<p class="p1">A container which contains less than \(250\) ml of yogurt is <strong>underfilled</strong>.</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">A container is chosen at random. Find the probability that it is underfilled.</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">The company decides that the probability of a container being underfilled should be reduced to \(0.02\). It decreases the standard deviation to \(\sigma \) and leaves the mean unchanged.</p>
+<p class="p1">Find \(\sigma \).</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">The company changes to the new standard deviation, \(\sigma \), and leaves the mean unchanged.</p>
+<p class="p1">A container is chosen at random for inspection. It passes inspection if its volume of yogurt is between&nbsp;\(250\) and \(271\) ml.</p>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Find the probability that it passes inspection.</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>Given that the container is <strong>not</strong> underfilled, find the probability that it passes inspection.</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">A sample of&nbsp;\(50\) containers is chosen at random. Find the probability that&nbsp;\(48\) or more of the containers pass inspection.</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>d.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">\(0.0477903\)</p>
+<p class="p1">probability \( = 0.0478\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A2 <span class="Apple-converted-space">&nbsp; &nbsp; </span>N2</em></strong></p>
+<p class="p1"><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>\({\text{P}}({\text{volume}} &lt; 250) = 0.02\) &nbsp; &nbsp; <strong><em>(M1)</em></strong></p>
+<p>\(z =&nbsp; - 2.05374\;\;\;\)(may be seen in equation) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>attempt to set up equation with \(z\) &nbsp; &nbsp; <strong><em>(M1)</em></strong></p>
+<p><em>eg</em>\(\;\;\;\frac{{\mu&nbsp; - 260}}{\sigma } = z,{\text{ }}260 - 2.05(\sigma ) = 250\)</p>
+<p>\(4.86914\)</p>
+<p>\(\sigma&nbsp; = 4.87{\text{ (ml)}}\) &nbsp; &nbsp; <strong><em>A1 &nbsp; &nbsp; N3</em></strong></p>
+<p><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\(0.968062\)</p>
+<p class="p1">\({\text{P}}(250 &lt; {\text{Vol}} &lt; 271) = 0.968\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A2 <span class="Apple-converted-space">&nbsp; &nbsp; </span>N2</em></strong></p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>recognizing conditional probability (seen anywhere, including in correct working) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1">eg\(\;\;\;{\text{P}}(A|B),{\text{ }}\frac{{{\text{P}}(A \cap B)}}{{{\text{P}}(B)}},{\text{ P}}(A \cap B) = {\text{P}}(A|B){\text{P}}(B)\)</p>
+<p class="p1">correct value or expression for \(P\) (not underfilled) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(A1)</em></strong></p>
+<p class="p1">eg\(\;\;\;0.98,1 - 0.02,{\text{ }}1 - {\text{P}}(X &lt; 250)\)</p>
+<p class="p1">probability \( = \frac{{0.968}}{{0.98}}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\(0.987818\)</p>
+<p class="p1">probability \( = 0.988\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1 <span class="Apple-converted-space">&nbsp; &nbsp; </span>N2</em></strong></p>
+<p class="p1"><strong><em>[6 marks]</em></strong></p>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1"><strong>METHOD 1</strong></p>
+<p class="p1">evidence of recognizing binomial distribution (seen anywhere) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1"><em>eg</em>\(\;\;\;X\;\;\;{\text{B}}(50,{\text{ }}0.968),{\text{ binomial cdf, }}p = 0.968,{\text{ }}r = 47\)</p>
+<p class="p1">\({\text{P}}(X \le 47\)) = 0.214106\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(A1)</em></strong></p>
+<p class="p1">evidence of using complement <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1"><em>eg</em>\(\;\;\;1 - {\text{P}}(X \le 47\))</p>
+<p class="p1">\(0.785894\)</p>
+<p class="p1">probability \( = 0.786\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1 <span class="Apple-converted-space">&nbsp; &nbsp; </span>N3</em></strong></p>
+<p class="p1"><strong>METHOD 2</strong></p>
+<p class="p1">evidence of recognizing binomial distribution (seen anywhere) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1"><em>eg</em>\(\;\;\;X\;\;\;{\text{B}}(50,{\text{ }}0.968),{\text{ binomial cdf, }}p = 0.968,{\text{ }}r = 47\)</p>
+<p class="p1">\({\text{P(not pass)}} = 1 - {\text{P(pass)}} = 0.0319378\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(A1)</em></strong></p>
+<p class="p1">evidence of attempt to find&nbsp;\(P\) (\(2\) or fewer fail) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1"><em>eg</em>\(\;\;\;\)\(0\), \(1\), or&nbsp;\(2\) not pass, \({\text{B}}(50,{\text{ }}2)\)</p>
+<p class="p1">\(0.785894\)</p>
+<p class="p1">probability \( = 0.786\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1 <span class="Apple-converted-space">&nbsp; &nbsp; </span>N3</em></strong></p>
+<p class="p1"><strong>METHOD 3</strong></p>
+<p class="p1">evidence of recognizing binomial distribution (seen anywhere) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1"><em>eg</em>\(\;\;\;X\;\;\;{\text{B}}(50,{\text{ }}0.968),{\text{ binomial cdf, }}p = 0.968,{\text{ }}r = 47\)</p>
+<p class="p1">evidence of summing probabilities <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1"><em>eg</em>\(\;\;\;{\text{P}}(X = 48) + {\text{P}}(X = 49) + {\text{P}}(X = 50)\)</p>
+<p class="p1">correct working</p>
+<p class="p1"><em>eg</em>\(\;\;\;0.263088 + 0.325488 + 0.197317\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(A1)</em></strong></p>
+<p class="p1">\(0.785894\)</p>
+<p class="p1">probability \( = 0.786\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1 <span class="Apple-converted-space">&nbsp; &nbsp; </span>N3</em></strong></p>
+<p class="p1"><strong><em>[4 marks]</em></strong></p>
+<p class="p1"><strong><em>Total [16 marks]</em></strong></p>
+<div class='question_part_label'>d.</div>
+</div>

@@ -1,0 +1,53 @@
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">consider the basic graph with just \(1\) vertex for which \(v = 1\) , \(f = 1\) and \(e = 0\)</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">for this case, \(v + f = e + 2 = 2\) so the result is true here&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>M1A1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;"><strong>Note</strong>: Allow solutions which begin with a graph containing \(2\) vertices </span><span style="font-family: times new roman,times; font-size: medium;">and an edge joining them for which \(v = 2\) , \(f = 1\) and \(e = 1\) .</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">&nbsp;</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">a graph can be extended as follows &ndash; there are three cases to consider</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">I &ndash; an extra edge is added joining two distinct existing vertices&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>R1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">II &ndash; an extra edge is added joining an existing vertex to itself, </span><span style="font-family: times new roman,times; font-size: medium;">forming a loop&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>R1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">in each case <strong><em>v</em></strong> remains the same and \(f\) and \(e\) each increase by \(1\)</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">both sides of the equation increase by \(1\) and the equation still holds&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>R1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">III &ndash; an extra vertex is added together with an edge joining this new vertex </span><span style="font-family: times new roman,times; font-size: medium;">to an existing vertex (which is necessary to keep the graph connected)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>R1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">in this case, \(f\) remains the same and \(v\) and \(e\) each increase by \(1\)</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">both sides of the equation increase by \(1\) and the equation still holds&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>R1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">any graph can be constructed from the basic graph by combining these </span><span style="font-family: times new roman,times; font-size: medium;">operations, all of which result in Euler&rsquo;s relation remaining valid&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>R1</strong></em></span></p>
+<p><em><strong><span style="font-family: times new roman,times; font-size: medium;">[8 marks]</span></strong></em></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">(i)&nbsp;&nbsp;&nbsp;&nbsp; since the graph is simple there are no loops and no multiple edges </span><span style="font-family: times new roman,times; font-size: medium;">and thus no circuits of length \(1\) or \(2\) &nbsp;&nbsp;&nbsp; <em><strong>R1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">as we are told that there are no circuits of length 3, any face </span><span style="font-family: times new roman,times; font-size: medium;">must be surrounded by at least \(4\) edges&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>R1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">since every edge is adjacent to \(2\) faces,&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>R1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\(2e = \sum {({\text{degrees of faces}}) \ge 4f} \) ,&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>A1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">it follows that \(e \ge 2f\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><strong>AG</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">using Euler&rsquo;s relation with \(f \le \frac{e}{2}\)</span><span style="font-family: times new roman,times; font-size: medium;">&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>M1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\(f = e - v + 2 \le \frac{e}{2}\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><strong>A1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">giving \(e \le 2v - 4\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><strong>AG</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;"><em><strong>&nbsp;</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">(ii) &nbsp; &nbsp; \({\kappa _{3,3}}\) </span><span style="font-family: times new roman,times; font-size: medium;">is simple and since it is bipartite it has no cycles of length \(3\) &nbsp;&nbsp;&nbsp; <em><strong>R1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">for \({\kappa _{3,3}}\) </span><span style="font-family: times new roman,times; font-size: medium;">, \(v = 6\) and \(e = 9\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>A1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">\(2v - 4 = 8\) so that the above inequality is not satisfied&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>R1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">it follows that \({\kappa _{3,3}}\) </span><span style="font-family: times new roman,times; font-size: medium;">is not planar&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>AG</em></strong></span></p>
+<p><strong><em><span style="font-family: times new roman,times; font-size: medium;">&nbsp;</span></em></strong></p>
+<p><strong><em><span style="font-family: times new roman,times; font-size: medium;">[9 marks]</span></em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">(i)&nbsp;&nbsp;&nbsp;&nbsp; attempt to find disjoint sets of vertices&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>(M1)</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">disjoint sets are {A, D, G, H} and {B, C, E, F}&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;"><strong>Note</strong>: Accept graph with vertices coloured, or otherwise annotated.</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">&nbsp;</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">(ii) &nbsp; &nbsp; let \(P'\) denote the complement of <em><strong>P</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">in \(P'\) , A is connected to D, E, F, G and H : B and C are connected to E</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">therefore A is connected to all other vertices so \(P'\) is connected&nbsp;&nbsp;&nbsp;&nbsp;<strong><em> M1A1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">a complete graph with \(8\) vertices has \(28\) edges&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>A1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">since \(P\) has \(9\) edges, \(P'\) has \(19\) edges&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>A1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">consider \(e \le 3v - 6\) (the condition for a planar graph)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>M1</em></strong></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">for \({P'}\) , \(e = 19\) ; \(3v - 6 = 18\) so the condition is not satisfied&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>A1</strong></em></span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">therefore \({P'}\) is not planar&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>AG</strong></em></span></p>
+<p><em><strong><span style="font-family: times new roman,times; font-size: medium;">&nbsp;</span></strong></em></p>
+<p><em><strong><span style="font-family: times new roman,times; font-size: medium;">[8 marks]</span></strong></em></p>
+<div class='question_part_label'>c.</div>
+</div>

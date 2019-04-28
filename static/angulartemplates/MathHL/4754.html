@@ -1,0 +1,40 @@
+<h2>Question</h2>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica;"><span style="font-family: 'times new roman', times; font-size: medium;">Using the definition of a derivative as \(f'(x) = \mathop {\lim }\limits_{h \to 0} \left( {\frac{{f(x + h) - f(x)}}{h}} \right)\)&nbsp;, show that&nbsp;the derivative of \(\frac{1}{{2x + 1}}{\text{ is }}\frac{{ - 2}}{{{{(2x + 1)}^2}}}\).</span></p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">Prove by induction that the \({n^{{\text{th}}}}\) derivative of \({(2x + 1)^{ - 1}}\) is \({( - 1)^n}\frac{{{2^n}n!}}{{{{(2x + 1)}^{n + 1}}}}\).</span></p>
+<div class='marks'>[9]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">let \(f(x) = \frac{1}{{2x + 1}}\) and using the result \(f'(x) = \mathop {\lim }\limits_{h \to 0} \left( {\frac{{f(x + h) - f(x)}}{h}} \right)\)</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\(f'(x) = \mathop {\lim }\limits_{h \to 0} \left( {\frac{{\frac{1}{{2(x + h) + 1}} - \frac{1}{{2x + 1}}}}{h}} \right)\) &nbsp; &nbsp;<strong> <em>M1A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( \Rightarrow f'(x) = \mathop {\lim }\limits_{h \to 0} \left( {\frac{{[2x + 1] - [2(x + h) + 1]}}{{h[2(x + h) + 1][2x + 1]}}} \right)\) &nbsp; &nbsp;<strong> <em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( \Rightarrow f'(x) = \mathop {\lim }\limits_{h \to 0} \left( {\frac{{ - 2}}{{[2(x + h) + 1][2x + 1]}}} \right)\) &nbsp; &nbsp;<strong> <em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( \Rightarrow f'(x) = \frac{{ - 2}}{{{{(2x + 1)}^2}}}\) &nbsp; &nbsp;<strong> <em>AG</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><strong><em><span style="font-family: 'times new roman', times; font-size: medium;">[4 marks]</span><br /></em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">let \(y = \frac{1}{{2x + 1}}\)</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">we want to prove that \(\frac{{{{\text{d}}^n}y}}{{{\text{d}}{x^n}}} = {( - 1)^n}\frac{{{2^n}n!}}{{{{(2x + 1)}^{n + 1}}}}\)</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">let \(n = 1 \Rightarrow \frac{{{\text{d}}y}}{{{\text{d}}x}} = {( - 1)^1}\frac{{{2^1}1!}}{{{{(2x + 1)}^{1 + 1}}}}\) &nbsp; &nbsp; <strong><em>M1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( \Rightarrow \frac{{{\text{d}}y}}{{{\text{d}}x}} = \frac{{ - 2}}{{{{(2x + 1)}^2}}}\) which is the same result as part (a)</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">hence the result is true for \(n = 1\) &nbsp; &nbsp; <strong><em>R1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">assume the result is true for \(n = k{\text{ : }}\frac{{{{\text{d}}^k}y}}{{{\text{d}}{x^k}}} = {( - 1)^k}\frac{{{2^k}k!}}{{{{(2x + 1)}^{k + 1}}}}\) &nbsp; &nbsp; <strong><em>M1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\(\frac{{{{\text{d}}^{k + 1}}y}}{{{\text{d}}{x^{k + 1}}}} = \frac{{\text{d}}}{{{\text{d}}x}}\left[ {{{( - 1)}^k}\frac{{{2^k}k!}}{{{{(2x + 1)}^{k + 1}}}}} \right]\) &nbsp; &nbsp;<strong> <em>M1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( \Rightarrow \frac{{{{\text{d}}^{k + 1}}y}}{{{\text{d}}{x^{k + 1}}}} = \frac{{\text{d}}}{{{\text{d}}x}}\left[ {{{( - 1)}^k}{2^k}k!{{(2x + 1)}^{ - k - 1}}} \right]\) &nbsp; &nbsp;<strong> <em>(A1)</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( \Rightarrow \frac{{{{\text{d}}^{k + 1}}y}}{{{\text{d}}{x^{k + 1}}}} = {( - 1)^k}{2^k}k!( - k - 1){(2x + 1)^{ - k - 2}} \times 2\) &nbsp; &nbsp;<strong> <em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( \Rightarrow \frac{{{{\text{d}}^{k + 1}}y}}{{{\text{d}}{x^{k + 1}}}} = {( - 1)^{k + 1}}{2^{k + 1}}(k + 1)!{(2x + 1)^{ - k - 2}}\) &nbsp; &nbsp;<strong> <em>(A1)</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">\( \Rightarrow \frac{{{{\text{d}}^{k + 1}}y}}{{{\text{d}}{x^{k + 1}}}} = {( - 1)^{k + 1}}\frac{{{2^{k + 1}}(k + 1)!}}{{{{(2x + 1)}^{k + 2}}}}\) &nbsp; &nbsp;<strong> <em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">hence if the result is true for \(n = k\) , it is true for \(n = k + 1\)</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;">since the result is true for \(n = 1\) , the result is proved by mathematical induction &nbsp; &nbsp;&nbsp;<strong><em>R1</em></strong></span><strong style="font-family: 'times new roman', times; font-size: medium;">&nbsp;</strong></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><span style="font-family: 'times new roman', times; font-size: medium;"><strong>Note: </strong>Only award final <strong><em>R1 </em></strong>if all the <strong><em>M </em></strong>marks have been gained.</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;">&nbsp;</p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px Times;"><strong><em><span style="font-family: 'times new roman', times; font-size: medium;">[9 marks]</span><br /></em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>

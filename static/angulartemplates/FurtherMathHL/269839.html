@@ -1,0 +1,42 @@
+<h2>Question</h2>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Solve the recurrence relation \({u_n} = 4{u_{n - 1}} - 4{u_{n - 2}}\) given that \({u_0} = {u_1} = 1\).</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Consider \({v_n}\) which satisfies the recurrence relation \(2{v_n} = 7{v_{n - 1}} - 3{v_{n - 2}}\) subject to the initial conditions \({v_0} = {v_1} = 1\).</p>
+<p>Prove by using strong induction that \({v_n} = \frac{4}{5}{\left( {\frac{1}{2}} \right)^n} + \frac{1}{5}{\left( 3 \right)^n}\) for \(n \in \mathbb{N}\).</p>
+<div class='marks'>[9]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p>auxiliary equation is \({m^2} - 4m + 4 = 0\)      <em><strong>M1A1</strong></em></p>
+<p>hence \(m\) has a repeated root of 2     <em><strong>(A1)</strong></em></p>
+<p>solution is of the form \({u_n} = a{\left( 2 \right)^n} + bn{\left( 2 \right)^n}\)     <em><strong>M1</strong></em></p>
+<p>using the initial conditions      <em><strong>M1</strong></em></p>
+<p>\( \Rightarrow a = 1\) and \(b =  - \frac{1}{2}\)</p>
+<p>\( \Rightarrow {u_n} = {2^n} - \frac{n}{2}{\left( 2 \right)^n}\)      <em><strong>A1</strong></em></p>
+<p><em><strong>[6 marks]</strong></em></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>\({v_n} = \frac{4}{5}{\left( {\frac{1}{2}} \right)^n} + \frac{1}{5}{\left( 3 \right)^n}\)</p>
+<p>let \(n = 0\)  \({v_0} = \frac{4}{5}{\left( {\frac{1}{2}} \right)^0} + \frac{1}{5}{\left( 3 \right)^0} = \frac{4}{5} + \frac{1}{5} = 1\)</p>
+<p>let \(n = 1\)  \({v_1} = \frac{4}{5}{\left( {\frac{1}{2}} \right)^1} + \frac{1}{5}{\left( 3 \right)^1} = \frac{2}{5} + \frac{3}{5} = 1\)</p>
+<p>hence true for \(n = 0\) and \(n = 1\)       <em><strong>M1A1</strong></em></p>
+<p>assume that \({v_j} = \frac{4}{5}{\left( {\frac{1}{2}} \right)^j} + \frac{1}{5}{\left( 3 \right)^j}\) is true for all \(j &gt; k + 1\)       <em><strong>M1</strong></em></p>
+<p>hence \({v_k} = \frac{4}{5}{\left( {\frac{1}{2}} \right)^k} + \frac{1}{5}{\left( 3 \right)^k}\) and \({v_{k - 1}} = \frac{4}{5}{\left( {\frac{1}{2}} \right)^{k - 1}} + \frac{1}{5}{\left( 3 \right)^{k - 1}}\)</p>
+<p>\({v_{k + 1}} = \frac{{7{v_k} - 3{v_{k - 1}}}}{2}\)</p>
+<p>\({v_{k + 1}} = \frac{{7\left[ {\frac{4}{5}{{\left( {\frac{1}{2}} \right)}^k} + \frac{1}{5}{{\left( 3 \right)}^k}} \right] - 3\left[ {\frac{4}{5}{{\left( {\frac{1}{2}} \right)}^{k - 1}} + \frac{1}{5}{{\left( 3 \right)}^{k - 1}}} \right]}}{2}\)      <em><strong>M1A1</strong></em></p>
+<p>\({v_{k + 1}} = \frac{{7\left[ {\frac{8}{5}{{\left( {\frac{1}{2}} \right)}^{k + 1}} + \frac{1}{{15}}{{\left( 3 \right)}^{k + 1}}} \right] - 3\left[ {\frac{{16}}{5}{{\left( {\frac{1}{2}} \right)}^{k + 1}} + \frac{1}{{45}}{{\left( 3 \right)}^{k + 1}}} \right]}}{2}\)       <em><strong>(A1)</strong></em></p>
+<p>\({v_{k + 1}} = \frac{{\frac{{56}}{5}{{\left( {\frac{1}{2}} \right)}^{k + 1}} + \frac{7}{{15}}{{\left( 3 \right)}^{k + 1}} - \frac{{48}}{5}{{\left( {\frac{1}{2}} \right)}^{k + 1}} - \frac{1}{{15}}{{\left( 3 \right)}^{k + 1}}}}{2}\)       <em><strong>(A1)</strong></em></p>
+<p>\({v_{k + 1}} = \frac{{\frac{8}{5}{{\left( {\frac{1}{2}} \right)}^{k + 1}} + \frac{6}{{15}}{{\left( 3 \right)}^{k + 1}}}}{2}\)       <em><strong>(A1)</strong></em></p>
+<p><strong>Note:</strong> Only one of the above <em><strong>(A1)</strong></em> can be implied.</p>
+<p>\({v_{k + 1}} = \frac{4}{5}{\left( {\frac{1}{2}} \right)^{k + 1}} + \frac{1}{{15}}{\left( 3 \right)^{k + 1}}\)</p>
+<p>since the basis step and the inductive step have been verified, the Principle of Mathematical Induction tells us that \({v_n} = \frac{4}{5}{\left( {\frac{1}{2}} \right)^n} + \frac{1}{5}{\left( 3 \right)^n}\) is<br>the general solution        <em><strong>R1</strong></em></p>
+<p><em><strong>[9 marks]</strong></em></p>
+<p><strong>Note:</strong> Only award final <em><strong>R1</strong></em> if at least 5 previous marks have been awarded.</p>
+<div class='question_part_label'>b.</div>
+</div>

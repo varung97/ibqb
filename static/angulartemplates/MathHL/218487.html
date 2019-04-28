@@ -1,0 +1,93 @@
+<h2>Question</h2>
+<div class='specification'>
+<p>Consider the function \(f(x) = \sin (p\arcsin x),{\text{ }} - 1 &lt; x &lt; 1\) and \(p \in \mathbb{R}\).</p>
+</div>
+
+<div class='specification'>
+<p>The function \(f\) and its derivatives satisfy</p>
+<p style="text-align: center;">\((1 - {x^2}){f^{(n + 2)}}(x) - (2n + 1)x{f^{(n + 1)}}(x) + ({p^2} - {n^2}){f^{(n)}}(x) = 0,{\text{ }}n \in \mathbb{N}\)</p>
+<p>where \({f^{(n)}}(x)\) denotes the \(n\) th derivative of \(f(x)\) and \({f^{(0)}}(x)\) is \(f(x)\).</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that \(f&rsquo;(0) = p\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that \({f^{(n + 2)}}(0) = ({n^2} - {p^2}){f^{(n)}}(0)\).</p>
+<div class='marks'>[1]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>For \(p \in \mathbb{R}\backslash \{&nbsp; \pm 1,{\text{ }} \pm 3\} \), show that the Maclaurin series for \(f(x)\), up to and including the \({x^5}\) term, is</p>
+<p style="text-align: center;">\(px + \frac{{p(1 - {p^2})}}{{3!}}{x^3} + \frac{{p(9 - {p^2})(1 - {p^2})}}{{5!}}{x^5}\).</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Hence or otherwise, find \(\mathop {\lim }\limits_{x \to 0} \frac{{\sin (p\arcsin x)}}{x}\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>d.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>If \(p\) is an odd integer, prove that the Maclaurin series for \(f(x)\) is a polynomial of degree \(p\).</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>e.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p>\(f&rsquo;(x) = \frac{{p\cos (p\arcsin x)}}{{\sqrt {1 - {x^2}} }}\) &nbsp; &nbsp; <strong><em>(M1)A1</em></strong></p>
+<p>&nbsp;</p>
+<p><strong>Note: </strong>Award <strong><em>M1 </em></strong>for attempting to use the chain rule.</p>
+<p>&nbsp;</p>
+<p>\(f&rsquo;(0) = p\) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p><strong>EITHER</strong></p>
+<p>\({f^{(n + 2)}}(0) + ({p^2} - {n^2}){f^{(n)}}(0) = 0\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p><strong>OR</strong></p>
+<p>for <em>eg</em>, \((1 - {x^2}){f^{(n + 2)}}(x) = (2n + 1)x{f^{(n + 1)}}(x) - ({p^2} - {n^2}){f^{(n)}}(x)\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>&nbsp;</p>
+<p><strong>Note: </strong>Award <strong><em>A1 </em></strong>for <em>eg</em>, \((1 - {x^2}){f^{(n + 2)}}(x) - (2n + 1)x{f^{(n + 1)}}(x) =&nbsp; - ({p^2} - {n^2}){f^{(n)}}(x)\).</p>
+<p>&nbsp;</p>
+<p><strong>THEN</strong></p>
+<p>\({f^{(n + 2)}}(0) = ({n^2} - {p^2}){f^{(n)}}(0)\) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p><strong><em>[1 mark]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>considering \(f\) and its derivatives at \(x = 0\) &nbsp; &nbsp; <strong><em>(M1)</em></strong></p>
+<p>\(f(0) = 0\) and \(f&rsquo;(0) = p\) from (a) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>\(f&rsquo;&rsquo;(0) = 0,{\text{ }}{f^{(4)}}(0) = 0\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>\({f^{(3)}}(0) = (1 - {p^2}){f^{(1)}}(0) = (1 - {p^2})p\),</p>
+<p>\({f^{(5)}}(0) = (9 - {p^2}){f^{(3)}}(0) = (9 - {p^2})(1 - {p^2})p\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>&nbsp;</p>
+<p><strong>Note:</strong> &nbsp; &nbsp; Only award the last <strong><em>A1</em></strong> if either \({f^{(3)}}(0) = (1 - {p^2}){f^{(1)}}(0)\) and \({f^{(5)}}(0) = (9 - {p^2}){f^{(3)}}(0)\) have been stated or the general Maclaurin series has been stated and used.</p>
+<p>&nbsp;</p>
+<p>\(px + \frac{{p(1 - {p^2})}}{{3!}}{x^3} + \frac{{p(9 - {p^2})(1 - {p^2})}}{{5!}}{x^5}\) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p><strong>METHOD 1</strong></p>
+<p>\(\mathop {\lim }\limits_{x \to 0} \frac{{\sin (p\arcsin x)}}{x} = \mathop {\lim }\limits_{x \to 0} \frac{{px + \frac{{p(1 - {p^2})}}{{3!}}{x^3} +&nbsp; \ldots }}{3}\) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>\( = p\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p><strong>METHOD 2</strong></p>
+<p>by l&rsquo;H&ocirc;pital&rsquo;s rule \(\mathop {\lim }\limits_{x \to 0} \frac{{\sin (p\arcsin x)}}{x} = \mathop {\lim }\limits_{x \to 0} \frac{{p\cos (p\arcsin x)}}{{\sqrt {1 - {x^2}} }}\) &nbsp; &nbsp; <strong><em>M1</em></strong></p>
+<p>\( = p\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>d.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>the coefficients of all even powers of \(x\) are zero &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>the coefficient of \({x^p}\) for (\(p\) odd) is non-zero (or equivalent <em>eg</em>,</p>
+<p>the coefficients of all odd powers of \(x\) up to \(p\) are non-zero) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>\({f^{(p + 2)}}(0) = ({p^2} - {p^2}){f^{(p)}}(0) = 0\) and so the coefficient of \({x^{p + 2}}\) is zero &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>the coefficients of all odd powers of \(x\) greater than \(p + 2\) are zero (or equivalent) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>so the Maclaurin series for \(f(x)\) is a polynomial of degree \(p\) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>e.</div>
+</div>

@@ -1,0 +1,55 @@
+<h2>Question</h2>
+<div class='specification'>
+<p>In 1985 , the deer population in a national park was \(330\). A year later it had increased to \(420\). To model these data the year 1985 was designated as year zero. The increase in deer population from year \(n - 1\) to year \(n\) is three times the increase from year \(n - 2\) to year \(n - 1\). The deer population in year \(n\)<em>&nbsp;</em>is denoted by \({x_n}\).</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Show that for \(n \geqslant 2,{\text{ }}{x_n} = 4{x_{n - 1}} - 3{x_{n - 2}}\).</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Solve the recurrence relation.</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Show using proof by strong induction that the solution is correct.</p>
+<div class='marks'>[9]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">\({x_n} - {x_{n - 1}} = 3({x_{n - 1}} - {x_{n - 2}})\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1A2</em></strong></p>
+<p class="p1">\({x_n} = 4{x_{n - 1}} - 3{x_{n - 2}}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>AG</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">we need to solve the quadratic equation \({t^2} - 4t + 3 = 0\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(M1)</em></strong></p>
+<p class="p1">\(t = 3,{\text{ }}1\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\({x_n} = a \times {1^n} + b \times {3^n}\)</p>
+<p class="p1">\({x_n} = a + b \times {3^n}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\(330 = a + b\) <span class="s1">and<span class="Apple-converted-space">&nbsp; </span></span>\(420 = a + 3b\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\(a = 285\) <span class="s1">and </span>\(b = 45\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\({x_n} = 285 + 45 \times {3^n}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">\({x_n} = 4{x_{n - 1}} - 3{x_{n - 2}}\)</p>
+<p class="p1">\({x_n} = 285 + 45 \times {3^n}\)</p>
+<p class="p1">let \(n = 0 \Rightarrow {x_0} = 330\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">let \(n = 1 \Rightarrow {x_1} = 420\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">hence true for \(n = 0,{\text{ }}n = 1\)</p>
+<p class="p1">assume true for \(n = k,{\text{ }}{x_k} = 285 + 45 \times {3^k}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">and assume true for \(n = k - 1,{\text{ }}{x_{k - 1}} = 285 + 45 \times {3^{k - 1}}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">consider \(n = k + 1\)</p>
+<p class="p1">\({x_{k + 1}} = 4{x_k} - 3{x_{k - 1}}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p1">\({x_{k + 1}} = 4(285 + 45 \times {3^k}) - 3(285 + 45 \times {3^{k - 1}})\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">\({x_{k + 1}} = 4(285) - 3(285) + 4(45 \times {3^k}) - (45 \times {3^k})\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>(A1)</em></strong></p>
+<p class="p1">\({x_{k + 1}} = 285 + 3(45 \times {3^k})\)</p>
+<p class="p1">\({x_{k + 1}} = 285 + 45 \times {3^{k + 1}}\) <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1">hence if solution is true for \(k\) and \(k - 1\) it is true for. However solution is true for \(k = 0\), \(k = 1\). Hence true for all \(k\). Hence proved by the principle of strong induction <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p2">&nbsp;</p>
+<p class="p1"><strong>Note: </strong>Do not award final reasoning mark unless candidate has been awarded at least 4 other marks in this part.</p>
+<div class='question_part_label'>c.</div>
+</div>

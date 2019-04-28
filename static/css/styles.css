@@ -1,0 +1,15 @@
+select {
+    width: 100px;
+}
+
+.listcol {
+    width: 150px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.displaycol {
+    /* width: 300px; */
+    vertical-align: top;
+    text-align: left;
+}

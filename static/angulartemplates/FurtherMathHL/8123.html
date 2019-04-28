@@ -1,0 +1,81 @@
+<h2>Question</h2>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">Use Kruskal&rsquo;s algorithm to find a minimum spanning tree for the weighted graph </span><span style="font-family: times new roman,times; font-size: medium;">shown below. State the weight of the tree.</span></p>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;"><br /><img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/523/kruskal.png" alt="" /></span></p>
+<div class='marks'>[5]</div>
+<div class='question_part_label'>A.a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">For the travelling salesman problem defined by this graph, find</span></p>
+<p style="margin-left: 30px;" align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">&nbsp; (i)&nbsp;&nbsp;&nbsp;&nbsp; an upper bound;</span></p>
+<p style="margin-left: 30px;"><span style="font-family: times new roman,times; font-size: medium;">&nbsp; (ii)&nbsp;&nbsp;&nbsp;&nbsp; a lower bound.</span></p>
+<div class='marks'>[8]</div>
+<div class='question_part_label'>A.b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p align="LEFT"><span style="font-family: times new roman,times; font-size: medium;">Given that the integers \(m\) and \(n\) are such that \(3|({m^2} + {n^2})\) , prove that \(3|m\) </span><span style="font-family: times new roman,times; font-size: medium;">and \(3|n\) .</span></p>
+<div class='marks'>[7]</div>
+<div class='question_part_label'>B.a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p><span style="font-family: times new roman,times; font-size: medium;"><strong>Hence</strong> show that \(\sqrt 2 \) is irrational.</span></p>
+<div class='marks'>[5]</div>
+<div class='question_part_label'>B.b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p><span style="color: #000000; font-family: Times New Roman; font-size: medium;"> <img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/524/kruskal.png" alt="" /></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">Start at an edge with weight \(2\), say BH, add other edges of weight \(2\) such that a cycle is not formed. Continue to add edges of increasing weight until all vertices have been included.&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>M1</em> </strong></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">thus the minimum spanning tree is </span></p>
+<p><span style="font-family: Times New Roman; font-size: medium;">\({\rm{BH + HC + GK + KH + KE + EF + GA + CD}}\)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><em><span style="font-family: times new roman,times; font-size: medium;">A3 </span></em></strong></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">total weight \( = 2 + 2 + 3 + 4 + 4 + 4 + 5 + 5 = 29\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>A1</em> </strong></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;"><strong>Note</strong>: GB may replace KH and other orders are possible. </span></p>
+<p><strong><em><span style="font-family: times new roman,times; font-size: medium;"> [5 marks] </span></em></strong></p>
+<div class='question_part_label'>A.a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p><span style="font-size: medium;"><span style="font-family: times new roman,times;">(i)&nbsp;&nbsp;&nbsp;&nbsp; upper bound \( = 2 \times \) weight of minimum spanning tree&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>M1</em></strong></span></span></p>
+<p style="margin-left: 30px;"><span style="font-family: Times New Roman; font-size: medium;">\( = 58\)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><em><span style="font-family: times new roman,times; font-size: medium;">A1 </span></em></strong></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">&nbsp;</span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">(ii) &nbsp; &nbsp; deleting vertex F&nbsp;&nbsp;&nbsp;&nbsp;<em><strong> M1</strong> </em></span></p>
+<p><br /><img src="../../../../../../../ib-questionbank-attachments.s3.amazonaws.com/uploads/tinymce_asset/asset/525/tulsa.png" alt="" /></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">the minimum spanning tree is </span></p>
+<p><span style="font-family: Times New Roman; font-size: medium;">\({\rm{BH + HC + GK + KE + KH + GA + CD}}\)&nbsp;&nbsp;&nbsp;&nbsp; </span><strong><span style="font-family: times new roman,times; font-size: medium;"><em>A2</em> </span></strong></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">total weight \( = 2 + 2 + 3 + 4 + 4 + 5 + 5 = 25\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em> </strong></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">adding the two edges of least weight from F&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>M1</strong> </em></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">lower bound \( = 25 + 4 + 6 = 35\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em> </strong></span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;"><strong>Note</strong>: Alternative solutions may be given by deleting a different vertex.</span></p>
+<p><span style="font-family: times new roman,times; font-size: medium;">&nbsp;</span></p>
+<p><strong><em><span style="font-family: times new roman,times; font-size: medium;"> [8 marks]</span></em></strong></p>
+<div class='question_part_label'>A.b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;"><strong>EITHER</strong> </span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">\(3|m \Rightarrow m \equiv 0(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>(R1)</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">if this is false then \(m \equiv 1\)&nbsp;or \(2(\bmod 3)\)&nbsp;and \({m^2} \equiv 1\) or \(4(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>R1A1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">since \(4 \equiv 1(\bmod 3)\) then \({m^2} \equiv 1(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">similarly \({n^2} \equiv 1(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">hence \({m^2} + {n^2} \equiv 2(\bmod 3)\)</span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">but \({m^2} + {n^2} \equiv 0(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>(R1)</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">this is a contradiction so \(3|m\) and \(3|n\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>R1AG </em></strong></span></p>
+<p align="JUSTIFY"><strong><span style="font-family: times new roman,times; font-size: medium;">OR </span></strong></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">\(m \equiv 0\) , 1 or \(2(\bmod 3)\) and \(n \equiv 0\) , 1&nbsp;or \(2(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><strong>M1R1</strong> </em></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">\( \Rightarrow {m^2} \equiv 0\) or \(1(\bmod 3)\) and \({n^2} \equiv 0\) or&nbsp;\(1(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>A1A1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">so \({m^2} + {n^2} \equiv 0,1,2(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">but \(3|{m^2} + {n^2}\) so \({m^2} + {n^2} \equiv 0(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp; <em><strong>R1</strong> </em></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">\(m \equiv 0(\bmod 3)\) and \(n \equiv 0(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp;<strong><em> R1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">\( \Rightarrow 3|m\) and \(3|n\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>AG </em></strong></span></p>
+<p><strong><em><span style="font-family: times new roman,times; font-size: medium;">[7 marks] </span></em></strong></p>
+<div class='question_part_label'>B.a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">suppose \(\sqrt 2&nbsp; = \frac{a}{b}\) , where \(a,b \in \mathbb{Z}\) and \(a\) and \(b\) are coprime&nbsp;&nbsp;&nbsp;&nbsp;<strong><em> M1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">then </span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">\(2{b^2} = {a^2}\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">\({a^2} + {b^2} = 3{b^2}\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">\(3{b^2} \equiv 0(\bmod 3)\)&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>A1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">but by (a) \(a\) and \(b\) have a common factor so \(\sqrt 2&nbsp; \ne \frac{a}{b}\)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em>R1</em> </strong></span></p>
+<p align="JUSTIFY"><span style="font-family: times new roman,times; font-size: medium;">\( \Rightarrow \sqrt 2 \) is irrational&nbsp;&nbsp;&nbsp;&nbsp; <strong><em>AG </em></strong></span></p>
+<p><strong><em><span style="font-family: times new roman,times; font-size: medium;">[5 marks] </span></em></strong></p>
+<div class='question_part_label'>B.b.</div>
+</div>

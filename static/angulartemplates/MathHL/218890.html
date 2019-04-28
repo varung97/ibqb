@@ -1,0 +1,36 @@
+<h2>Question</h2>
+<div class='specification'>
+<p>Let \(f:G \to H\) be a homomorphism between groups \(\{ G,{\text{ }} * \} \) and \(\{ H,{\text{ }} \circ \} \) with identities \({e_G}\) and \({e_H}\) respectively.</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Prove that \(f({e_G}) = {e_H}\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Prove that \({\text{Ker}}(f)\) is a subgroup of \(\{ G,{\text{ }} * \} \).</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p>let \(a \in G\) and \(f(a) \in H\)</p>
+<p>\(f\) is a homomorphism so \(f(a * {e_G}) = f(a) \circ f({e_G})\) &nbsp; &nbsp; <strong><em>(M1)</em></strong></p>
+<p>\(f(a) = f(a) \circ f({e_G})\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>\({e_H} = f({e_G})\) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p>&nbsp;</p>
+<p><strong><em>[2 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>from part (a) \({e_G} \in {\text{Ker}}(f)\) and associativity follows from&nbsp;G &nbsp; &nbsp;<strong><em>R1</em></strong></p>
+<p>let \(a,{\text{ }}b \in {\text{Ker}}(f)\)</p>
+<p>\(f(a * b) = f(a) \circ f(b) = {e_H} \circ {e_H} = {e_H}\) &nbsp; &nbsp; <strong><em>A1</em></strong></p>
+<p>hence closed since \(a * b \in {\text{Ker}}(f)\)</p>
+<p>\({e_H} = f({a^{ - 1}} * a) = f({a^{ - 1}}) \circ f(a) = f({a^{ - 1}}) \circ {e_H} = f({a^{ - 1}})\) &nbsp; &nbsp; <strong><em>M1A1</em></strong></p>
+<p>hence \({a^{ - 1}} \in {\text{Ker}}(f)\) &nbsp; &nbsp; <strong><em>R1</em></strong></p>
+<p>hence \({\text{Ker}}(f)\) is subgroup of \(G\) &nbsp; &nbsp; <strong><em>AG</em></strong></p>
+<p><strong><em>[6 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>

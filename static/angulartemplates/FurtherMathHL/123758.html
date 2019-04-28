@@ -1,0 +1,55 @@
+<h2>Question</h2>
+<div class='specification'>
+<p class="p1">The discrete random variables \({X_n},{\text{ }}n \in {\mathbb{Z}^ + }\) have probability generating functions given by \({G_n}(t) = \frac{t}{n}\left( {\frac{{{t^n} - 1}}{{t - 1}}} \right)\).</p>
+</div>
+
+<div class='specification'>
+<p class="p1">Let \({X_{n - 1}}\) and \({X_{n + 1}}\) be independent.</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Use the formula for the sum of a finite geometric series to show that</p>
+<p class="p1">\[{\text{P}}({X_n} = k) = \left\{ {\begin{array}{*{20}{l}} {\frac{1}{n}}&amp;{{\text{for }}1 \leqslant k \leqslant n} \\ 0&amp;{{\text{otherwise}}} \end{array}.} \right.\]</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Find \({\text{E}}({X_n})\).</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Find the set of values of \(n\) <span class="s1">for which \({\text{E}}({X_{n - 1}} \times {X_{n + 1}}) &lt; 2n\).</span></p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">using \(\left( {\frac{{{t^n} - 1}}{{t - 1}}} \right) = 1 + t + {t^2} +  \ldots {t^{n - 1}}\) <span class="Apple-converted-space">    </span><strong><em>M1</em></strong></p>
+<p class="p1"><span class="Apple-converted-space">\({G_n}(t) = 0 + \frac{t}{n} + \frac{{{t^2}}}{n} + \frac{{{t^3}}}{n} +  \ldots \frac{{{t^n}}}{n} + 0 \times {t^{n + 1}} + 0 \times  \ldots \)    </span><strong><em>A1A1</em></strong></p>
+<p class="p2"> </p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">    </span><em>A1 </em></strong>for the non-zero terms, <strong><em>A1 </em></strong>for the observation that all other terms are zero.</p>
+<p class="p2"> </p>
+<p class="p1">the statement that the coefficient of \({t^k}\) gives \({\text{P}}({X_n} = k)\) <span class="Apple-converted-space">    </span><strong><em>R1</em></strong></p>
+<p class="p3">hence \({\text{P}}({X_n} = k) = \left\{ {\begin{array}{*{20}{l}} {\frac{1}{n}}&amp;{{\text{for }}1 \leqslant k \leqslant n} \\ 0&amp;{{\text{otherwise}}} \end{array}} \right.\)       <strong><em>AG</em></strong></p>
+<p class="p1"><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1"><span class="s1">\({\text{E}}({X_n}) = 0 \times 0 + 1 \times \frac{1}{n} + 2 \times \frac{1}{n} + 3 \times \frac{1}{n} +  \ldots n \times \frac{1}{n} + (n + 1) \times 0 +  \ldots  \times 0\) <span class="Apple-converted-space">    </span></span><strong><em>(M1)(A1)</em></strong></p>
+<p class="p2">\( = \frac{1}{n} \times \sum\limits_{k = 1}^{k = n} k \)</p>
+<p class="p2"><span class="Apple-converted-space">\( = \frac{1}{n} \times \frac{1}{2}n(n + 1) = \frac{{n + 1}}{2}\)    </span><span class="s2"><strong><em>A1</em></strong></span></p>
+<p class="p3"> </p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">    </span></strong>Accept use of \(G'(1)\).</p>
+<p class="p3"> </p>
+<p class="p1"><strong><em>[3 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">\({X_{n - 1}}\) and \({X_{n + 1}}\) are independent \( \Rightarrow {\text{E}}({X_{n - 1}} \times {X_{n + 1}}) = {\text{E}}({X_{n - 1}}) \times {\text{E}}({X_{n + 1}})\) <span class="Apple-converted-space">    </span><strong><em>M1</em></strong></p>
+<p class="p2"><span class="Apple-converted-space">\( = \frac{n}{2} \times \frac{{n + 2}}{2}\)  </span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p1">required to solve \({n^2} &lt; 6n{\text{ }}({\text{or }}n + 2 &lt; 8)\) <span class="Apple-converted-space">    </span><strong><em>M1</em></strong></p>
+<p class="p2">solution: \((2 \leqslant ){\text{ }}n &lt; 6\) <span class="Apple-converted-space">    </span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p1"><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>c.</div>
+</div>

@@ -1,0 +1,49 @@
+<h2>Question</h2>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Show that \({2^n} \equiv {( - 1)^n}(\bmod 3)\)<span class="s1">, where \(n \in \mathbb{N}\).</span></p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1"><span class="s1">Hence show that an integer is divisible by 3 if and only if the difference between the </span>sum of its binary (base 2) digits in even-numbered positions and the sum of its binary digits in odd-numbered positions is divisible by 3.</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Express the hexadecimal (base 16) number \({\text{ABB}}{{\text{A}}_{{\text{16}}}}\) <span class="s1">in binary.</span></p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1"><strong>METHOD 1</strong></p>
+<p class="p2"><span class="Apple-converted-space">\({2^n} = {(3 - 1)^n}\)    </span><span class="s1"><strong><em>M1</em></strong></span></p>
+<p class="p2"><span class="Apple-converted-space">\( = {3^n} + n{3^{n - 1}}( - 1) + \frac{{n(n - 1)}}{2}{3^{n - 2}}{( - 1)^2} + {\text{ }} \ldots {\text{ }} + {( - 1)^n}\)    </span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p2">since all terms apart from the last one are divisible by 3 <span class="Apple-converted-space">    </span><span class="s1"><strong><em>R1</em></strong></span></p>
+<p class="p2"><span class="Apple-converted-space">\({2^n} \equiv {( - 1)^n}(\bmod 3)\)    </span><span class="s1"><strong><em>AG</em></strong></span></p>
+<p class="p1"><strong>METHOD 2</strong></p>
+<p class="p2">attempt to reduce the powers of \(2(\bmod 3)\) <span class="Apple-converted-space">    </span><span class="s1"><strong><em>M1</em></strong></span></p>
+<p class="p2"><span class="Apple-converted-space">\({2^0} = 1(\bmod 3);{\text{ }}{2^1} =  - 1(\bmod 3);{\text{ }}{2^2} = 1(\bmod 3);{\text{ }}{2^3} =  - 1(\bmod 3){\text{ }} \ldots \)    </span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p1"><span class="s2">since \(1(\bmod 3) \times 2 =  - 1(\bmod 3)\) </span>and \( - 1(\bmod 3) \times 2 = 1(\bmod 3)\) the result can be generalized     <strong><em>R1</em></strong></p>
+<p class="p2"><span class="Apple-converted-space">\(2n \equiv {( - 1)^n}(\bmod 3)\)    </span><span class="s1"><strong><em>AG</em></strong></span></p>
+<p class="p1"><strong><em>[3 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">the binary number \(N = {({a_n}{a_{n - 1}} \ldots {a_2}{a_1}{a_0})_2}\) has numerical value</p>
+<p class="p1"><span class="Apple-converted-space">\({a_0} \times 1 + {a_1} \times 2 + {a_2} \times {2^2} +  \ldots  + {a_n} \times {2^n}\)    </span><strong><em>A1</em></strong></p>
+<p class="p2"><span class="Apple-converted-space">\(N = \left( {{a_0} - {a_1} + {a_2} -  \ldots {{( - 1)}^n}{a_n}} \right)(\bmod 3)\)    </span><span class="s1"><strong><em>M1A1</em></strong></span></p>
+<p class="p1">hence divisibility of \(N\) <span class="s2">by 3 </span>coincides with statement of question <span class="Apple-converted-space">    </span><strong><em>AG</em></strong></p>
+<p class="p1"><strong><em>[3 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1"><span class="Apple-converted-space">\({\text{ABB}}{{\text{A}}_{16}} = 10 \times {16^3} + 11 \times {16^2} + 11 \times 16 + 10 \times 1\)    </span><span class="s1"><strong><em>(A1)</em></strong></span></p>
+<p class="p2"><span class="s2">\(N = {(1010)_2} \times {2^{12}} + {(1011)_2} \times {2^8} + {(1011)_2} \times {2^4} + {(1010)_2} \times {2^0}\) <span class="Apple-converted-space">    </span></span><strong><em>(M1)(A1)</em></strong></p>
+<p class="p3"> </p>
+<p class="p2"><strong>Note: <span class="Apple-converted-space">    </span></strong>Award <strong><em>M1 </em></strong><span class="s2">for expressing A and B </span>in binary.</p>
+<p class="p3"> </p>
+<p class="p2"><span class="Apple-converted-space">\(N = {(1010101110111010)_2}\)    </span><strong><em>A1</em></strong></p>
+<p class="p2"><strong><em>[4 marks]</em></strong></p>
+<div class='question_part_label'>c.</div>
+</div>

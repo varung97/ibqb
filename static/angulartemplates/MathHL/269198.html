@@ -1,0 +1,50 @@
+<h2>Question</h2>
+<div class='specification'>
+<p>The random variable <em>X</em> has a binomial distribution with parameters \(n\) and \(p\).</p>
+</div>
+
+<div class='specification'>
+<p>Let&nbsp;\(U = nP\left( {1 - P} \right)\).</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that \(P = \frac{X}{n}\) is an unbiased estimator of \(p\).</p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that \({\text{E}}\left( U \right) = \left( {n - 1} \right)p\left( {1 - p} \right)\).</p>
+<div class='marks'>[5]</div>
+<div class='question_part_label'>b.i.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Hence write down an unbiased estimator of Var(<em>X</em>).</p>
+<div class='marks'>[1]</div>
+<div class='question_part_label'>b.ii.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p>\({\text{E}}\left( P \right) = {\text{E}}\left( {\frac{X}{n}} \right) = \frac{1}{n}{\text{E}}\left( X \right)\)      <em><strong>M1</strong></em></p>
+<p>\( = \frac{1}{n}\left( {np} \right) = p\)      <em><strong>A1</strong></em></p>
+<p>so <em>P</em> is an unbiased estimator of \(p\)     <em><strong>AG</strong></em></p>
+<p><em><strong>[2 marks]</strong></em></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>\({\text{E}}\left( {nP\left( {1 - P} \right)} \right) = {\text{E}}\left( {n\left( {\frac{X}{n}} \right)\left( {1 - \frac{X}{n}} \right)} \right)\)</p>
+<p>\( = {\text{E}}\left( X \right) = \frac{1}{n}{\text{E}}\left( {{X^2}} \right)\)      <em><strong>M1A1</strong></em></p>
+<p>use of \({\text{E}}\left( {{X^2}} \right) = {\text{Var}}\left( X \right) + {\left( {{\text{E}}\left( X \right)} \right)^2}\)      <em><strong>M1</strong></em></p>
+<p><strong>Note:</strong> Allow candidates to work with <em>P</em> rather than <em>X</em> for the above 3 marks.</p>
+<p>\( = np - \frac{1}{n}\left( {np\left( {1 - p} \right) + {{\left( {np} \right)}^2}} \right)\)       <em><strong>A1</strong></em></p>
+<p>\( = np - p\left( {1 - p} \right) - n{p^2}\)</p>
+<p>\( = np\left( {1 - p} \right) - p\left( {1 - p} \right)\)      <em><strong>A1</strong></em></p>
+<p><strong>Note:</strong> Award <em><strong>A1</strong></em> for the factor of \(\left( {1 - p} \right)\).</p>
+<p>\( = \left( {n - 1} \right)p\left( {1 - p} \right)\)     <em><strong>AG</strong></em></p>
+<p><em><strong>[5 marks]</strong></em></p>
+<div class='question_part_label'>b.i.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>an unbiased estimator is \(\frac{{{n^2}P\left( {1 - P} \right)}}{{n - 1}}\left( { = \frac{{nU}}{{n - 1}}} \right)\)       <em><strong>A1</strong></em></p>
+<p><em><strong>[1 mark]</strong></em></p>
+<div class='question_part_label'>b.ii.</div>
+</div>

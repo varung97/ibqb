@@ -1,0 +1,90 @@
+<h2>Question</h2>
+<div class='specification'>
+<p>The discrete random variable <em>X</em> follows a geometric distribution Geo(\(p\)) where</p>
+<p style="text-align: center;">\({\text{P}}\left( {X = x} \right) = \left\{ {\begin{array}{*{20}{c}}<br /> {p{q^{x - 1}},\,{\text{for}}\,x = 1,\,2 \ldots } \\ <br /> {0,\,{\text{otherwise}}} <br />\end{array}} \right.\)</p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Show that the probability generating function of <em>X</em> is given by</p>
+<p>\[G\left( t \right) = \frac{{pt}}{{1 - qt}}.\]</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>a.i.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Deduce that \({\text{E}}\left( X \right) = \frac{1}{p}\).</p>
+<div class='marks'>[4]</div>
+<div class='question_part_label'>a.ii.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Two friends A and B play a ball game with the following rules.</p>
+<p>Each player starts with zero points. Player A serves first and then the players have alternate pairs of serves so that the service order is A, B, B, A, A, … When player A serves, the probability of her scoring 1 point is \({p_A}\) and the probability of B scoring 1 point is \({q_A}\), where \({q_A} = 1 - {p_A}\).</p>
+<p>When player B serves, the probability of her scoring 1 point is \({p_B}\) and the probability of A scoring 1 point is \({q_B}\), where \({q_B} = 1 - {p_B}\).</p>
+<p>Show that, after the first 6 serves, the probability that each player has 3 points is</p>
+<p>\(\sum\limits_{x = 0}^{x = 3} {{{\left( \begin{gathered}<br> 3 \hfill \\<br> x \hfill \\ <br>\end{gathered} \right)}^2}} {\left( {{p_A}} \right)^x}{\left( {{p_B}} \right)^x}{\left( {{q_A}} \right)^{3 - x}}{\left( {{q_B}} \right)^{3 - x}}\).</p>
+<p> </p>
+<div class='marks'>[5]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>After 6 serves the score is 3 points each. Play continues and the game ends when one player has scored two more points than the other player. Let <em>N</em> be the number of further serves required before the game ends. Given that \({p_A}\) = 0.7 and \({p_A}\) = 0.6 find P(<em>N</em> = 2).</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p>Let \(M = \frac{1}{2}N\). Show that <em>M</em> has a geometric distribution and hence find the value of E(<em>N</em>).</p>
+<div class='marks'>[7]</div>
+<div class='question_part_label'>d.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p>\({\text{P}}\left( {X = x} \right) = p{q^{x - 1}},\,{\text{for}}\,x = 1,\,2 \ldots \)</p>
+<p>\(G\left( t \right) = \sum\limits_{x = 1}^\infty  {{t^x}} p{q^{x - 1}}\)      <em><strong>M1</strong></em></p>
+<p>\( = pt\sum\limits_{x = 1}^\infty  {{{\left( {tq} \right)}^{x - 1}}} \)       <em><strong>A1</strong></em></p>
+<p>\( = pt\left( {1 + tq + {{\left( {tq} \right)}^2} \ldots } \right)\)      <em><strong>M1</strong></em></p>
+<p>\( = \frac{{pt}}{{1 - tq}}\)     <em><strong> AG</strong></em></p>
+<p><em><strong>[3 marks]</strong></em></p>
+<div class='question_part_label'>a.i.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>\(G'\left( t \right) = \frac{{\left( {1 - tq} \right)p - pt\left( { - q} \right)}}{{{{\left( {1 - tq} \right)}^2}}}\)      <em><strong>M1A1</strong></em></p>
+<p>\({\text{E}}\left( X \right) = G'\left( 1 \right)\)      <em><strong>M1</strong></em></p>
+<p>\( = \frac{{\left( {1 - q} \right)p + pq}}{{{{\left( {1 - q} \right)}^2}}}\)      <em><strong>A1</strong></em></p>
+<p>\( = \frac{1}{p}\)       <em><strong> AG</strong></em></p>
+<p><em><strong>[4 marks]</strong></em></p>
+<div class='question_part_label'>a.ii.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>after 6 serves (3 serves each) we have <em>ABBAAB</em></p>
+<p><em>A</em> serves   <em>B</em> serves</p>
+<p>3 wins       0 losses      \({p_1} = {}^3{C_3}p_A^3q_A^0{}^3{C_0}p_B^3q_B^0\)     <em><strong>M1A1</strong></em></p>
+<p>2 wins       1 loss         \({p_2} = {}^3{C_2}p_A^2q_A^1{}^3{C_1}p_B^2q_B^1\)      <em><strong>A1</strong></em></p>
+<p>1 win         2 losses     \({p_3} = {}^3{C_1}p_A^1q_A^2{}^3{C_2}p_B^1q_B^2\)      <em><strong>A1</strong></em></p>
+<p>0 wins       3 losses     \({p_4} = {}^3{C_0}p_A^0q_A^3{}^3{C_3}p_B^0q_B^3\)<em><strong>       A1</strong></em></p>
+<p>since \({}^3{C_0} = {}^3{C_3},\,\,{}^3{C_1} = {}^3{C_2}\)</p>
+<p>\(\sum\limits_{x = 0}^{x = 3} {{{\left( \begin{gathered}<br> 3 \hfill \\<br> x \hfill \\ <br>\end{gathered} \right)}^2}} {\left( {{p_A}} \right)^x}{\left( {{p_B}} \right)^x}{\left( {{q_A}} \right)^{3 - x}}{\left( {{q_B}} \right)^{3 - x}}\)     <em><strong>AG</strong></em></p>
+<p><em><strong>[5 marks]</strong></em></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>for <em>N</em> = 2 serves are <em>B</em>, <em>A</em> respectively</p>
+<p>P(<em>N</em> = 2) = P(<em>B</em> wins twice) + P(<em>A</em> wins twice)    <em><strong>  (M1)</strong></em></p>
+<p>= 0.6 × 0.3 + 0.4 × 0.7       <em><strong>A1</strong></em></p>
+<p>= 0.46       <em><strong>A1</strong></em></p>
+<p><em><strong>[3 marks]</strong></em></p>
+<div class='question_part_label'>c.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p>for \(M = \frac{1}{2}N\)</p>
+<p>\({\text{P}}\left( {M = 1} \right) = {\text{P}}\left( {N = 2} \right) = {p_M}\)      <em><strong>M1</strong></em></p>
+<p>\({\text{P}}\left( {M = 2} \right) = {\text{P}}\left( {N = 4} \right)\)</p>
+<p>\( = {\text{P}}\left( {\begin{array}{*{20}{c}}<br> {{\text{game does not end after}}} \\ <br> {{\text{first two serves}}} <br>\end{array}} \right) \times {\text{P}}\left( {\begin{array}{*{20}{c}}<br> {{\text{game ends after}}} \\ <br> {{\text{next two serves}}} <br>\end{array}} \right) = \left( {1 - {p_M}} \right){p_M}\)      <em><strong>A1</strong></em></p>
+<p>similarly \({\text{P}}\left( {M = 3} \right) = {\left( {1 - {p_M}} \right)^2}{p_M}\)      <em><strong>(A1)</strong></em></p>
+<p>hence \({\text{P}}\left( {M = r} \right) = {\left( {1 - {p_M}} \right)^{r - 1}}{p_M}\)       <em><strong>A1</strong></em></p>
+<p>hence <em>M</em> has a geometric distribution      <em><strong>AG</strong></em></p>
+<p>\({\text{P}}\left( {M = 1} \right) = {\text{P}}\left( {N = 2} \right) = {p_M} = 0.46\)      <em><strong>A1</strong></em></p>
+<p>hence \({\text{E}}\left( M \right) = \frac{1}{p} = \frac{1}{{0.46}} = 2.174\)</p>
+<p>\({\text{E}}\left( N \right) = {\text{E}}\left( {2M} \right) = 2{\text{E}}\left( M \right)\)       <em><strong>M1</strong></em></p>
+<p>= 4.35      <em><strong>A1</strong></em></p>
+<p><em><strong>[7 marks]</strong></em></p>
+<div class='question_part_label'>d.</div>
+</div>

@@ -1,0 +1,38 @@
+<h2>Question</h2>
+<div class='specification'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">The number of birds seen on a power line on any day can be modelled by a Poisson distribution with mean 5.84.</span></p>
+</div>
+
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">Find the probability that during a certain seven-day week, more than 40 birds have been seen on the power line.</span></p>
+<div class='marks'>[2]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">On Monday there were more than 10 birds seen on the power line. Show that the probability of there being more than 40 birds seen on the power line from that Monday to the following Sunday, inclusive, can be expressed as:</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">\(\frac{{{\text{P}}(X &gt; 40) + \sum\limits_{r = 11}^{40} {{\text{P}}(X = r){\text{P}}(Y &gt; 40 - r)} }}{{{\text{P}}(X &gt; 10)}}\) where \(X \sim {\text{Po}}(5.84)\) and \(Y \sim {\text{Po}}(35.04)\).</span></p>
+<div class='marks'>[5]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">mean for week is 40.88 &nbsp; &nbsp; <strong><em>(A1)</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.5px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">\({\text{P}}(S &gt; 40) = 1 - {\text{P}}(S \leqslant 40) = 0.513\) &nbsp; &nbsp; <strong><em>A1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;"><strong><em>[2 marks]</em></strong></span></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.5px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">\(\frac{{{\text{probability there were more than 10 on Monday AND more than 40 over the week}}}}{{{\text{probability there were more than 10 on Monday}}}}\) &nbsp; &nbsp; <strong><em>M1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">possibilities for the numerator are:</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">there were more than 40 birds on the power line on Monday &nbsp; &nbsp; <strong><em>R1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">11 on Monday and more than 29 over the course of the next 6 days &nbsp; &nbsp; <strong><em>R1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">12 on Monday and more than 28 over the course of the next 6 days &hellip; until</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">40 on Monday and more than 0 over the course of the next 6 days &nbsp; &nbsp; <strong><em>R1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">hence if <em>X </em>is the number on the power line on Monday and <em>Y</em>, the number on the power line Tuesday &ndash; Sunday then the numerator is &nbsp; &nbsp; <strong><em>M1</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.5px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">\({\text{P}}(X &gt; 40) + {\text{P}}(X = 11) \times {\text{P}}(Y &gt; 29) + {\text{P}}(X = 12) \times {\text{P}}(Y &gt; 28) +&nbsp; \ldots \)</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.5px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">\( + {\text{P}}(X = 40) \times {\text{P}}(Y &gt; 0)\)</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.5px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">\( = {\text{P}}(X &gt; 40) + \sum\limits_{r = 11}^{40} {{\text{P}}(X = r){\text{P}}(Y &gt; 40 - r)} \)</span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;">hence solution is \(\frac{{{\text{P}}(X &gt; 40) + \sum\limits_{r = 11}^{40} {{\text{P}}(X = r){\text{P}}(Y &gt; 40 - r)} }}{{{\text{P}}(X &gt; 10)}}\) &nbsp; &nbsp; <strong><em>AG</em></strong></span></p>
+<p style="margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px 'Times New Roman';"><span style="font-family: 'times new roman', times; font-size: medium;"><strong><em>[5 marks]</em></strong></span></p>
+<div class='question_part_label'>b.</div>
+</div>

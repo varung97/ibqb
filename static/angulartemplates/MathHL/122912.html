@@ -1,0 +1,56 @@
+<h2>Question</h2>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Solve the recurrence relation \({v_n} + 4{v_{n - 1}} + 4{v_{n - 2}} = 0\) where \({v_1} = 0,{\text{ }}{v_2} = 1\).</p>
+<div class='marks'>[6]</div>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Use strong induction to prove that the solution to the recurrence relation \({u_n} - 4{u_{n - 1}} + 4{u_{n - 2}} = 0\) where \({u_1} = 0,{\text{ }}{u_2} = 1\) is given by \({u_n} = {2^{n - 2}}(n - 1)\).</p>
+<div class='marks'>[8]</div>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px; padding-right: 20px;'>
+<p class="p1">Find a simplified expression for \({u_n} + {v_n}\) given that,</p>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\(n\) is even.</p>
+<p class="p1">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>\(n\) is odd.</p>
+<div class='marks'>[3]</div>
+<div class='question_part_label'>c.</div>
+</div>
+<h2 style='margin-top: 1em'>Markscheme</h2>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">the auxiliary equation is \({m^2} + 4m + 4 = 0\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p2"><span class="Apple-converted-space">\(m = -2\) &nbsp; &nbsp;</span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p2">the general solution is</p>
+<p class="p2"><span class="Apple-converted-space">\({v_n} = (A + Bn) \times {( - 2)^n}\) &nbsp; &nbsp;</span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p2">the boundary conditions give</p>
+<p class="p2">\(0 = -{\text{ }}2(A + B)\)</p>
+<p class="p2"><span class="Apple-converted-space">\(1 = 4(A + 2B)\) &nbsp; &nbsp;</span><span class="s1"><strong><em>M1</em></strong></span></p>
+<p class="p1">the solution is \(A = &nbsp;- \frac{1}{4},{\text{ }}B = \frac{1}{4}\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1A1</em></strong></p>
+<p class="p1">so that&nbsp;\({v_n} = \frac{1}{4}(n - 1){( - 2)^n}{\text{ }}\left( {{\text{or }}(n - 1)( - 2{)^{n - 2}}} \right)\)</p>
+<p class="p1"><strong><em>[6 marks]</em></strong></p>
+<div class='question_part_label'>a.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1"><span class="s1">\(n = 1\)&nbsp;gives \((1 - 1) \times \frac{1}{2} = 0\)&nbsp;</span>which is correct <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1"><span class="s1">\(n = 2\) gives \((2 - 1) \times 1 = 1\)&nbsp;</span>which is correct <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Must be checked for \(n = 1\)&nbsp;<span class="s1">and 2</span>, other values gain no marks.</p>
+<p class="p1">assume that the result is true for all positive integers \( \leqslant k\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p3"><span class="Apple-converted-space">\({u_{k + 1}} = 4{u_k} - 4{u_{k - 1}}\) &nbsp; &nbsp;</span><span class="s2"><strong><em>(M1)</em></strong></span></p>
+<p class="p4"><span class="Apple-converted-space">\({u_{k + 1}} = 4 \times {2^{k - 2}}(k - 1) - 4 \times {2^{k - 3}}(k - 2)\) &nbsp; &nbsp;</span><span class="s2"><strong><em>A1</em></strong></span></p>
+<p class="p1"><span class="s3">\( = {2^{k - 1}}(2k - 2 - k + 2)\)&nbsp;</span>or equivalent <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>A1</em></strong></p>
+<p class="p5"><span class="Apple-converted-space">\( = k{2^{k - 1}}\) &nbsp; &nbsp;</span><span class="s2"><strong><em>A1</em></strong></span></p>
+<p class="p1">therefore true for \(n \leqslant k \Rightarrow \) true for \(n = k + 1\) and since true for \(n = 1\) and \(n = 2\), the result is proved by strong induction <span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>R1</em></strong></p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Only award the <strong><em>R1 </em></strong>if at least four of the above marks have been awarded.</p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>Allow true for \(k\) and \(k - 1\) (in 2 places) instead of stronger statement.</p>
+<p class="p1"><strong>Note: <span class="Apple-converted-space">&nbsp; &nbsp; </span></strong>First <strong><em>M1 </em></strong>does not have to be given for further marks to be gained but second <strong><em>(M1) </em></strong>does.</p>
+<p class="p1"><strong><em>[8 marks]</em></strong></p>
+<div class='question_part_label'>b.</div>
+</div>
+<div class='question' style='padding-left: 20px;'>
+<p class="p1">(i) <span class="Apple-converted-space">&nbsp; &nbsp;&nbsp;\({u_n} + {v_n} = {2^{n - 2}}(n - 1) + {( - 2)^{n - 2}}(n - 1)\)</span></p>
+<p class="p2">when \(n\) is even \({u_n} + {v_n} = {2^{n - 2}}(n - 1) + {2^{n - 2}}(n - 1)\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span><strong><em>M1</em></strong></p>
+<p class="p3"><span class="Apple-converted-space">\( = {2^{n - 1}}(n - 1)\) &nbsp; &nbsp;</span><span class="s1"><strong><em>A1</em></strong></span></p>
+<p class="p2">(ii) <span class="Apple-converted-space">&nbsp; &nbsp; </span>when \(n\) <span class="s2">is odd \({u_n} + {v_n} = 0\)&nbsp;<span class="Apple-converted-space">&nbsp; &nbsp; </span></span><strong><em>A1</em></strong></p>
+<p class="p2"><strong><em>[3 marks]</em></strong></p>
+<div class='question_part_label'>c.</div>
+</div>
