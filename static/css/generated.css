@@ -1,0 +1,11 @@
+body {
+    width: 100%;
+}
+
+header footer {
+    display: none;
+}
+
+img {
+    width: 100%;
+}

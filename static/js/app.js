@@ -1,6 +1,6 @@
 var app = angular.module('app', []);
 
-app.controller('myController', function myController($rootScope, $scope, $http) {
+app.controller('myController', function myController($rootScope, $scope, $http, $window) {
     $rootScope.$watch(function(){
       MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
       return true;
@@ -90,6 +90,7 @@ app.controller('myController', function myController($rootScope, $scope, $http) 
             }
         }).then(function(response) {
             console.log(response.data);
+            $window.open('/paper', '_blank');
         })
     }
 
@@ -106,6 +107,7 @@ app.controller('myController', function myController($rootScope, $scope, $http) 
             }
         }).then(function(response) {
             console.log(response.data);
+            $window.open('/markscheme', '_blank');
         })
     }
 })
