@@ -1,7 +1,7 @@
 import os
 
 
-QPATH = 'static/questions/'
+QPATH = '../questions/'
 OUTPATH = 'static/angulartemplates/'
 
 

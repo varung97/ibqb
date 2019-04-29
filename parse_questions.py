@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from collections import defaultdict
 
 
-QPATH = 'static/questions/'
+QPATH = '../questions/'
 
 
 if __name__ == '__main__':
@@ -16,7 +16,7 @@ if __name__ == '__main__':
             continue
 
         print(subject)
-        questions[subject] = {'questions': [], 'years': set(), 'papers': set(), 'levels': set(), 'tzs': set(), 'sessions': set(), 'outer_sections': set(), 'sections': defaultdict(set)}
+        questions[subject] = {'questions': [], 'years': set(), 'papers': set(), 'levels': set(), 'tzs': set(), 'sessions': set(), 'outer_sections': set(), 'inner_sections': defaultdict(set), 'inner_inner_sections': defaultdict(set)}
 
         for question in next(os.walk(os.path.join(QPATH, subject)))[2]:
             qid = question.strip('.html')
@@ -35,6 +35,7 @@ if __name__ == '__main__':
                 sections = BeautifulSoup(contents[i : i + 400].split('<div>')[1].split('</div>')[0], 'html5lib').getText().split('\u00BB')
                 outer_section = sections[0].strip()
                 inner_section = sections[1].strip() if len(sections) > 1 else 'N/A'
+                inner_inner_section = sections[2].strip() if len(sections) > 2 else 'N/A'
 
                 if 'SP' in yearsession:
                     continue
@@ -48,7 +49,8 @@ if __name__ == '__main__':
                 questions[subject]['tzs'].add(tz)
                 questions[subject]['sessions'].add(session)
                 questions[subject]['outer_sections'].add(outer_section)
-                questions[subject]['sections'][outer_section].add(inner_section)
+                questions[subject]['inner_sections'][outer_section].add(inner_section)
+                questions[subject]['inner_inner_sections'][inner_section].add(inner_inner_section)
                 questions[subject]['questions'].append({
                     'id': qid,
                     'year': year,
@@ -57,11 +59,13 @@ if __name__ == '__main__':
                     'level': level,
                     'tz': tz,
                     'outer_section': outer_section,
-                    'inner_section': inner_section
+                    'inner_section': inner_section,
+                    'inner_inner_section': inner_inner_section,
                 })
             # break
 
-        print(questions[subject]['sections'])
+        # print(questions[subject]['inner_sections'])
+        # print(questions[subject]['inner_inner_sections'])
 
     with open('static/json/questions.json', 'w') as f:
         for subject in questions:
@@ -71,6 +75,8 @@ if __name__ == '__main__':
             questions[subject]['tzs'] = list(sorted(questions[subject]['tzs']))
             questions[subject]['sessions'] = list(sorted(questions[subject]['sessions']))
             questions[subject]['outer_sections'] = list(sorted(questions[subject]['outer_sections']))
-            questions[subject]['sections'] = dict({k: sorted(v) for k, v in questions[subject]['sections'].items()})
+            questions[subject]['inner_sections'] = dict({k: sorted(v) for k, v in questions[subject]['inner_sections'].items()})
+            questions[subject]['inner_inner_sections'] = dict({k: sorted(v) for k, v in questions[subject]['inner_inner_sections'].items()})
+            print(questions[subject]['inner_inner_sections'])
 
         f.write(json.dumps(questions))

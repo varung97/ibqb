@@ -6,6 +6,15 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
       return true;
     });
 
+    $scope.resetSelected = function() {
+        $scope.selectedYear = ' Year';
+        $scope.selectedSession = ' Session';
+        $scope.selectedPaper = ' Paper';
+        $scope.selectedLevel = ' Level';
+        $scope.selectedTZ = ' TZ';
+        $scope.selectedOuterSection = ' Topic';
+    }
+
     $scope.updateSelectors = function() {
         if (!$scope.allQuestions.hasOwnProperty($scope.subject)) {
             return;
@@ -28,9 +37,18 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
                 if (newSelectedOuterSection[0] == ' ') {
                     $scope.innerSections = [' Subtopic'];
                 } else {
-                    $scope.innerSections = [' Subtopic'].concat($scope.allQuestions[$scope.subject]['sections'][newSelectedOuterSection]);
+                    $scope.innerSections = [' Subtopic'].concat($scope.allQuestions[$scope.subject]['inner_sections'][newSelectedOuterSection]);
                 }
                 $scope.selectedInnerSection = ' Subtopic';
+            });
+
+            $scope.$watch('selectedInnerSection', function (newSelectedInnerSection) {
+                if (newSelectedInnerSection[0] == ' ') {
+                    $scope.innerInnerSections = [' Subsubtopic'];
+                } else {
+                    $scope.innerInnerSections = [' Subsubtopic'].concat($scope.allQuestions[$scope.subject]['inner_inner_sections'][newSelectedInnerSection]);
+                }
+                $scope.selectedInnerInnerSection = ' Subsubtopic';
             });
 
             $scope.$watch('allQuestions', function (newAllQuestions) {
@@ -39,6 +57,7 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
 
             $scope.$watch('subject', function (newSubject) {
                 $scope.updateSelectors();
+                $scope.resetSelected();
                 $scope.addedQuestions = [];
             });
         }, function error(data) {
@@ -57,7 +76,8 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
                    $scope.matchSelected(question.level, $scope.selectedLevel) &&
                    $scope.matchSelected(question.tz, $scope.selectedTZ) &&
                    $scope.matchSelected(question.outer_section, $scope.selectedOuterSection) &&
-                   $scope.matchSelected(question.inner_section, $scope.selectedInnerSection);
+                   $scope.matchSelected(question.inner_section, $scope.selectedInnerSection) &&
+                   $scope.matchSelected(question.inner_inner_section, $scope.selectedInnerInnerSection);
         }
     }
 
