@@ -93,8 +93,19 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
         })
     }
 
+    $scope.scrollToTop = function() {
+        (function smoothscroll() {
+            var currentScroll = $window.scrollY;
+            if (currentScroll > 0) {
+                $window.requestAnimationFrame(smoothscroll);
+                $window.scrollTo(0, currentScroll - (currentScroll / 8));
+            }
+        })();
+    }
+
     $scope.selectQuestion = function(question) {
         $scope.selectedQuestion = question.id;
+        $scope.scrollToTop();
     }
 
     $scope.generatePaper = function() {
@@ -130,4 +141,10 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
             $window.open('/markscheme', '_blank');
         })
     }
+
+    // angular.element($window).bind("scroll", function () {
+    //     $scope.$apply(function() {
+    //         $scope.questionPosition = Math.max(0, this.pageYOffset - 250);
+    //     })
+    // });
 })
