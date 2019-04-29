@@ -14,7 +14,7 @@ select {
 }
 
 button {
-    background-color: #555555;
+    background-color: #343a40;
     border-radius: 12px;
     border: 2px solid white;
     color: white;
@@ -36,4 +36,43 @@ button:hover {
 .wrapper {
     text-align: center;
     padding: 8px;
+}
+
+.navbar {
+    background-color: #343a40;
+    border: none;
+    height: 50px;
+}
+
+.navbar>.container .nav .dropdown {
+    height: 50px;
+}
+
+/* .nav {
+    height: 100%;
+} */
+
+.dropdown-toggle {
+    background-color: #343a40!important;
+    box-shadow: none!important;
+    background-image: none!important;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.caret {
+    margin-top: 12px!important;
+}
+
+body>.page-content {
+    padding-top: 0px!important;
+}
+
+h1 {
+    color: #343a40;
+}
+
+h2 {
+    color: #343a40;
 }

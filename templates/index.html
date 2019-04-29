@@ -11,6 +11,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML-full"
         async></script>
 
+    <!-- <link rel="stylesheet" href="static/css/bootstrap.css" /> -->
     <link rel="stylesheet" href="static/css/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
@@ -22,15 +23,9 @@
 </head>
 <body class='teacher syllabus_sections-index' ng-controller="myController" ng-init="subject='Physics'">
     <div class='navbar navbar-fixed-top'>
-        <div class='navbar-inner'>
+        <!-- <div class='navbar-inner'> -->
             <div class='container'>
-                <div class='brand'>
-                    <div class='inner'><a href="http://ibo.org/">ibo.org</a></div>
-                </div>
                 <ul class='nav'>
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
                     <li class='active dropdown'>
                         <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
                             Questionbanks
@@ -38,71 +33,42 @@
                         </a>
                         <ul class='dropdown-menu'>
                             <li>
-                                <a ng-click="subject='Physics'" target="_blank">DP Physics</a>
+                                <a ng-click="subject='Physics'" target="_blank">Physics</a>
                             </li>
                             <li>
-                                <a ng-click="subject='Geography'" target="_blank">DP Geography</a>
+                                <a ng-click="subject='Geography'" target="_blank">Geography</a>
                             </li>
                             <li>
-                                <a ng-click="subject='Chemistry'" target="_blank">DP Chemistry</a>
+                                <a ng-click="subject='Chemistry'" target="_blank">Chemistry</a>
                             </li>
                             <li>
-                                <a ng-click="subject='Biology'" target="_blank">DP Biology</a>
+                                <a ng-click="subject='Biology'" target="_blank">Biology</a>
                             </li>
                             <li>
-                                <a ng-click="subject='FurtherMathHL'" target="_blank">DP Further Mathematics HL</a>
+                                <a ng-click="subject='FurtherMathHL'" target="_blank">Further Mathematics HL</a>
                             </li>
                             <li>
-                                <a ng-click="subject='MathHL'" target="_blank">DP Mathematics HL</a>
+                                <a ng-click="subject='MathHL'" target="_blank">Mathematics HL</a>
                             </li>
                             <li>
-                                <a ng-click="subject='MathSL'" target="_blank">DP Mathematics SL</a>
+                                <a ng-click="subject='MathSL'" target="_blank">Mathematics SL</a>
                             </li>
                             <li>
-                                <a ng-click="subject='MathStudies'" target="_blank">DP Mathematical Studies</a>
+                                <a ng-click="subject='MathStudies'" target="_blank">Mathematical Studies</a>
                             </li>
                         </ul>
-                    </li>
-                </ul>
-
-                <ul class='nav pull-right'>
-                    <li class='dropdown'>
-                        <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
-                            Help
-                            <b class='caret'></b>
-                        </a>
-                        <ul class='dropdown-menu'>
-                            <li><a href="https://questionbank.ibo.org/video_tour?locale=en">Video tour</a></li>
-                            <li><a href="https://questionbank.ibo.org/instructions?locale=en">Detailed instructions</a></li>
-                            <li><a target="_blank" href="https://ibanswers.ibo.org/">IB Answers</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="https://www.ibdocuments.com/Home">IB Documents Team</a>
                     </li>
                 </ul>
             </div>
-        </div>
+        <!-- </div> -->
     </div>
 
     <div class='page-content container'>
-        <div class='row'>
-            <div class='span24'>
-
-                <div class="pull-right screen_only"><a class="btn btn-small btn-info" href="https://questionbank.ibo.org/updates?locale=en">Updates to Questionbank</a></div>
-                <p class='muted language_chooser'>
-                    User interface language:
-                    <a href="https://questionbank.ibo.org/en/users/set_user_locale?new_locale=en">English</a>
-                    |
-                    <a href="https://questionbank.ibo.org/en/users/set_user_locale?new_locale=es">Español</a>
-                </p>
-            </div>
-        </div>
 
         <div class='page-header'>
             <div class='row'>
                 <div class='span16'>
-                    <h1>DP {{ subject }} Questionbank</h1>
+                    <h1>{{ subject }} Questionbank</h1>
                 </div>
             </div>
         </div>
@@ -145,12 +111,12 @@
             <tr>
                 <th class="listcol">
                     <p ng-repeat="x in questions | filter : applyFilters()">
-                        <span style="cursor: pointer" ng-click="addQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-style="x.id == selectedQuestion ? {'background-color': 'black', 'color': 'white'} : {'color': 'black'}" ng-click="selectQuestion(x)">{{ x.id }}</a>
+                        <span style="cursor: pointer" ng-click="addQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-style="x.id == selectedQuestion ? {'background-color': '#343a40', 'color': 'white'} : {'color': 'black'}" ng-click="selectQuestion(x)">{{ x.id }}</a>
                     </p>
                 </th>
                 <th class="listcol">
                     <p ng-repeat="x in addedQuestions">
-                        <span style="cursor: pointer" ng-click="removeQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-style="x.id == selectedQuestion ? {'background-color': 'black', 'color': 'white'} : {'color': 'black'}" ng-click="selectQuestion(x)">{{ x.id }}</a>
+                        <span style="cursor: pointer" ng-click="removeQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-style="x.id == selectedQuestion ? {'background-color': '#343a40', 'color': 'white'} : {'color': 'black'}" ng-click="selectQuestion(x)">{{ x.id }}</a>
                     </p>
                 </th>
                 <!-- <th class="displaycol" ng-style="{'width': 'auto', 'position': 'relative'}" ng-init="questionPosition=0"> -->

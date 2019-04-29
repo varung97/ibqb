@@ -105,7 +105,7 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
 
     $scope.selectQuestion = function(question) {
         $scope.selectedQuestion = question.id;
-        $scope.scrollToTop();
+        // $scope.scrollToTop();
     }
 
     $scope.generatePaper = function() {
