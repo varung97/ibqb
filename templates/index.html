@@ -111,12 +111,12 @@
             <tr>
                 <th class="listcol">
                     <p ng-repeat="x in questions | filter : applyFilters()">
-                        <span style="cursor: pointer" ng-click="addQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-style="x.id == selectedQuestion ? {'background-color': '#343a40', 'color': 'white'} : {'color': 'black'}" ng-click="selectQuestion(x)">{{ x.id }}</a>
+                        <span style="cursor: pointer" ng-click="addQuestion(x)">&nbsp;&nbsp;&rarr;&nbsp;&nbsp;&nbsp;</span><a ng-style="x.id == selectedQuestion ? {'background-color': '#343a40', 'color': 'white'} : {'color': 'black'}" ng-click="selectQuestion(x)">{{ x.year }}.{{ x.session }}.{{ x.paper }}.{{ x.id.slice(-3) }}</a>
                     </p>
                 </th>
                 <th class="listcol">
                     <p ng-repeat="x in addedQuestions">
-                        <span style="cursor: pointer" ng-click="removeQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-style="x.id == selectedQuestion ? {'background-color': '#343a40', 'color': 'white'} : {'color': 'black'}" ng-click="selectQuestion(x)">{{ x.id }}</a>
+                        <span style="cursor: pointer" ng-click="removeQuestion(x)">&nbsp;&nbsp;&larr;&nbsp;&nbsp;&nbsp;</span><a ng-style="x.id == selectedQuestion ? {'background-color': '#343a40', 'color': 'white'} : {'color': 'black'}" ng-click="selectQuestion(x)">{{ x.year }}.{{ x.session }}.{{ x.paper }}.{{ x.id.slice(-3) }}</a>
                     </p>
                 </th>
                 <!-- <th class="displaycol" ng-style="{'width': 'auto', 'position': 'relative'}" ng-init="questionPosition=0"> -->
