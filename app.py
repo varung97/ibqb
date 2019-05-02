@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request, send_file
 import os
 import json
+from flask_cors import cross_origin
+
 
 app = Flask(__name__)
 
@@ -22,6 +24,7 @@ def index():
 
 
 @app.route('/paper')
+@cross_origin()
 def paper():
     return render_template("paper.html")
 
