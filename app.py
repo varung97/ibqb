@@ -42,7 +42,7 @@ def generatePaper():
             out.write(start.read())
 
         for idx, question in enumerate(data['questions']):
-            out.write('<h3>Q' + str(idx + 1) + '</h3>\n')
+            out.write('<h5>Q' + str(idx + 1) + '.</h5>\n')
             with open('static/angulartemplates/' + subject + '/' + question + 'q.html') as f:
                 out.write(f.read() + '\n')
 
