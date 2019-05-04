@@ -62,8 +62,8 @@ def generateMarkscheme():
             out.write(start.read())
 
         for idx, question in enumerate(data['questions']):
-            out.write('<h3>Q' + str(idx + 1) + '</h3>\n')
-            with open('static/angulartemplates/' + subject + '/' + question + 'a.html') as f:
+            out.write('<h3>Q' + str(idx + 1) + '. ' + question['year'] + '.' + question['session'] + '.' + question['paper'] + '</h3>\n')
+            with open('static/angulartemplates/' + subject + '/' + question['id'] + 'a.html') as f:
                 out.write(f.read() + '\n')
 
         with open('output_end.html') as end:

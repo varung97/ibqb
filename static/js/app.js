@@ -131,15 +131,17 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
             url: '/generateMarkscheme',
             headers: {'Content-Type': 'json'},
             data: {
-                questions: $scope.addedQuestions.map(function(addedQuestion) {
-                    return addedQuestion.id;
-                }),
+                questions: $scope.addedQuestions,
                 subject: $scope.subject
             }
         }).then(function(response) {
             console.log(response.data);
             $window.open('/markscheme', '_blank');
         })
+    }
+
+    $scope.clearQuestions = function() {
+      $scope.addedQuestions = [];
     }
 
     // angular.element($window).bind("scroll", function () {
