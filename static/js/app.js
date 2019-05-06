@@ -121,7 +121,7 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
             }
         }).then(function(response) {
             console.log(response.data);
-            $window.open('/paper', '_blank');
+            $window.open('/paper?fileName=' + response.data.fileName, '_blank');
         })
     }
 
@@ -136,7 +136,7 @@ app.controller('myController', function myController($rootScope, $scope, $http, 
             }
         }).then(function(response) {
             console.log(response.data);
-            $window.open('/markscheme', '_blank');
+            $window.open('/markscheme?fileName=' + response.data.fileName, '_blank');
         })
     }
 

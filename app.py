@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, send_file
 import os
 import json
+import time
 
 
 app = Flask(__name__)
@@ -19,25 +20,26 @@ app.jinja_options = jinja_options
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
 
 
 @app.route('/paper')
 def paper():
-    return render_template("paper.html")
+    return render_template(request.args.get('fileName') + '.html')
 
 
 @app.route('/markscheme')
 def markscheme():
-    return render_template("markscheme.html")
+    return render_template(request.args.get('fileName') + '.html')
 
 
 @app.route('/generatePaper', methods=['POST'])
 def generatePaper():
     data = json.loads(request.data.decode())
 
+    fileName = str(int(time.time() * 1000))
     subject = data['subject']
-    with open('templates/paper.html', 'w') as out:
+    with open('templates/' + fileName + '.html', 'w') as out:
         with open('output_start.html') as start:
             out.write(start.read())
 
@@ -49,15 +51,16 @@ def generatePaper():
         with open('output_end.html') as end:
             out.write(end.read())
 
-    return json.dumps({'result': 'Success'})
+    return json.dumps({'fileName': fileName})
 
 
 @app.route('/generateMarkscheme', methods=['POST'])
 def generateMarkscheme():
     data = json.loads(request.data.decode())
 
+    fileName = str(int(time.time() * 1000))
     subject = data['subject']
-    with open('templates/markscheme.html', 'w') as out:
+    with open('templates/' + fileName + '.html', 'w') as out:
         with open('output_start.html') as start:
             out.write(start.read())
 
@@ -69,7 +72,7 @@ def generateMarkscheme():
         with open('output_end.html') as end:
             out.write(end.read())
 
-    return json.dumps({'result': 'Success'})
+    return json.dumps({'fileName': fileName})
 
 
 if __name__ == '__main__':
